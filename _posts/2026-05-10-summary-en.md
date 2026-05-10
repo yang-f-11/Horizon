@@ -5,151 +5,154 @@ date: 2026-05-10
 lang: en
 ---
 
-> From 24 items, 7 important content pieces were selected
+> From 32 items, 7 important content pieces were selected
 
 ---
 
-1. [Fictional Incident Report Sparks Real Supply Chain Discussion](#item-1) ⭐️ 9.0/10
-2. [EU Digital Wallet Ties Identity to Google/Apple via Attestation](#item-2) ⭐️ 8.0/10
-3. [Local AI must become the norm](#item-3) ⭐️ 8.0/10
-4. [Space Cadet Pinball Faithfully Recreated for Linux via Decompilation](#item-4) ⭐️ 8.0/10
-5. [Andrew Quinn on Reinventing Wheels for Understanding](#item-5) ⭐️ 8.0/10
-6. [NVIDIA Star Elastic Packs Three Reasoning Models in One Checkpoint](#item-6) ⭐️ 8.0/10
-7. [Report Exposes Chinese Grey Market for Claude API with Data Theft](#item-7) ⭐️ 8.0/10
+1. [Hardware Attestation as Monopoly Enabler in EU Digital Wallets](#item-1) ⭐️ 9.0/10
+2. [Mathematician Tests ChatGPT 5.5 Pro on Gentle Problems](#item-2) ⭐️ 9.0/10
+3. [Local AI Must Become the Norm](#item-3) ⭐️ 8.0/10
+4. [Fictional CVE-2024-YIKES Depicts Rust Supply Chain Attack](#item-4) ⭐️ 8.0/10
+5. [Return to AWS Sparks Critique of Lock-in and Costs](#item-5) ⭐️ 8.0/10
+6. [Rossmann offers to pay legal fees for OrcaSlicer dev](#item-6) ⭐️ 8.0/10
+7. [Space Cadet Pinball Ported to Linux via Decompilation](#item-7) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Fictional Incident Report Sparks Real Supply Chain Discussion](https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html) ⭐️ 9.0/10
+## [Hardware Attestation as Monopoly Enabler in EU Digital Wallets](https://grapheneos.social/@GrapheneOS/116550899908879585) ⭐️ 9.0/10
 
-A detailed fictional incident report titled 'CVE-2024-YIKES' was published, depicting a sophisticated supply-chain attack on the Rust package ecosystem via a compromised transitive dependency. This creative narrative highlights critical security vulnerabilities in modern software supply chains, particularly around transitive dependencies and maintainer trust. It generated high-quality community discussion, reflecting growing concern and engagement with supply chain security. The attack exploits a Rust library 'vulpine-lz4' with only 12 GitHub stars that is a transitive dependency of cargo itself. Attackers compromised a maintainer via a fake EuroMillions win and a YubiKey phishing attack.
-
-hackernews · miniBill · May 10, 17:43 · [Discussion](https://news.ycombinator.com/item?id=48086082)
-
-**Background**: A supply-chain attack targets the software build process by compromising a dependency that is trusted by many projects. Transitive dependencies, or dependencies of dependencies, can introduce vulnerabilities without direct awareness. The Rust community has been increasingly focused on securing the cargo package manager and its ecosystem.
-
-**Discussion**: Comments praised the realism and educational value of the fiction, with users noting it had them momentarily worried. There was technical discussion on which crates could be compromised to affect cargo builds, and some humorous reactions to the 'dog ate YubiKey' root cause.
-
-**Tags**: `#supply chain security`, `#incident response`, `#cybersecurity fiction`, `#open source`, `#community discussion`
-
----
-
-<a id="item-2"></a>
-## [EU Digital Wallet Ties Identity to Google/Apple via Attestation](https://grapheneos.social/@GrapheneOS/116550899908879585) ⭐️ 8.0/10
-
-The EU Digital Identity Wallet (EUDI) requires hardware attestation by Google or Apple, effectively mandating that all European digital identities rely on US duopoly platforms. This requirement undermines European digital sovereignty and privacy by entrenching the monopoly power of Google and Apple over digital identity, and risks enabling tracking of users through attestation packets. The attestation process does not use zero-knowledge proofs or blind signatures, meaning each attestation leaves a linkable packet that can associate actions with a specific device.
+A post on GrapheneOS's social media argues that requiring hardware attestation from Apple and Google for EU Digital Identity Wallets entrenches their monopoly and undermines digital sovereignty and privacy. This critique highlights how well-intentioned security mandates can inadvertently strengthen the duopoly of Apple and Google, harming digital sovereignty and privacy. It also raises concerns about the lack of zero-knowledge proofs in the wallet design, which could enable tracking. The post specifically notes that the EUDI Wallet requires hardware attestation by Google or Apple, effectively tying digital identities to their platforms. Community comments also point out that the system does not use zero-knowledge proofs or blind signatures, potentially allowing linking of actions to devices.
 
 hackernews · ChuckMcM · May 10, 17:54 · [Discussion](https://news.ycombinator.com/item?id=48086190)
 
-**Background**: Hardware attestation involves using a tamper-resistant security chip (like TPM) to verify a device's boot process and software integrity. The EU Digital Identity Wallet (EUDI) is a mobile app for proving identity and sharing verified attributes. The requirement for Google/Apple attestation effectively locks out devices without Google or Apple hardware-backed attestation.
+**Background**: Hardware attestation is a security mechanism where a device proves its authenticity via a tamper-resistant chip (like a TPM or hardware keystore). The EU Digital Identity Wallet is an initiative to provide a standardized digital identity for EU citizens. Critics argue that requiring hardware attestation from dominant mobile OS providers cedes control to them, contradicting the goal of digital sovereignty.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://developer.android.com/privacy-and-security/security-key-attestation">Verify hardware-backed key pairs with key attestation | Security | Android Developers</a></li>
 <li><a href="https://en.wikipedia.org/wiki/EU_Digital_Identity_Wallet">EU Digital Identity Wallet - Wikipedia</a></li>
+<li><a href="https://developer.android.com/privacy-and-security/security-key-attestation">Verify hardware-backed key pairs with key attestation | Security | Android Developers</a></li>
 <li><a href="https://aembit.io/blog/attestation-based-identity-hardware-cloud-security/">Attestation-Based Identity: How It Works and Why It Matters</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters express strong opposition, noting historical efforts to resist such centralized control (e.g., Intel's serial number in 1999). They argue that the lack of zero-knowledge proofs exacerbates privacy risks, and call for alternative methods to allow modification of microelectronics after manufacturing.
+**Discussion**: Comments express strong opposition, with users noting the irony of the EU requiring attestation from US companies. One commenter highlights the absence of zero-knowledge proofs as a worse issue, enabling linking. Another traces the history of opposition to hardware serial numbers and TPMs, arguing that security propaganda led to walled gardens.
 
-**Tags**: `#hardware attestation`, `#digital identity`, `#privacy`, `#monopoly`, `#EU`
+**Tags**: `#hardware attestation`, `#digital sovereignty`, `#privacy`, `#monopoly`, `#EU digital wallet`
+
+---
+
+<a id="item-2"></a>
+## [Mathematician Tests ChatGPT 5.5 Pro on Gentle Problems](https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/) ⭐️ 9.0/10
+
+A leading mathematician published a detailed account of using ChatGPT 5.5 Pro, reporting that it can solve 'gentle problems' that are often used to train beginning PhD students. This indicates that large language models may soon be able to handle problems that are typically used to train new researchers, which could significantly alter the landscape of research education and the nature of mathematical work. According to the article and comments, while ChatGPT 5.5 Pro can solve simple problems and self-correct, it still needs strict guidance and is expensive to use.
+
+hackernews · _alternator_ · May 9, 02:41 · [Discussion](https://news.ycombinator.com/item?id=48071262)
+
+**Background**: In mathematics, 'gentle problems' are carefully chosen problems that are just above a student's current ability, used to build research skills. The ability of an LLM to solve such problems challenges traditional methods of mentoring new researchers.
+
+**Discussion**: Commenters generally agree with the author's assessment, noting that ChatGPT 5.5 Pro is the first model they can wrangle to solve straightforward problems, though it is costly. One physics professor shared a similar experience with Gemini, praising its ability to find errors but noting conceptual mistakes. There is also philosophical debate about the value of ideas when they become easy to produce.
+
+**Tags**: `#ChatGPT`, `#LLM`, `#AI`, `#mathematics`, `#research`
 
 ---
 
 <a id="item-3"></a>
-## [Local AI must become the norm](https://unix.foo/posts/local-ai-needs-to-be-norm/) ⭐️ 8.0/10
+## [Local AI Must Become the Norm](https://unix.foo/posts/local-ai-needs-to-be-norm/) ⭐️ 8.0/10
 
-An opinion piece argues that local AI should be the standard, drawing parallels to the open source movement and noting that hardware and model improvements are making local inference viable. Reducing dependency on centralized AI services like OpenAI and Anthropic enhances privacy, control, and resilience, and could reshape the AI ecosystem similarly to how open source transformed software. Comments highlight that models need to be 'good enough' and run on consumer devices, and hardware is progressing from data centers to 128GB VRAM laptops, making local inference feasible alongside remote planning models.
+A blog post argues that local AI should be the standard, drawing parallels to the historical shift from proprietary to open source software, and discusses the current dependency on remote AI services from companies like Anthropic and OpenAI. This matters because it challenges the prevailing model of centralized AI services and highlights the risks of vendor lock-in, privacy concerns, and accessibility issues. The discussion reflects a growing community desire for local, user-controlled AI alternatives. The post notes that local AI adoption is progressing from large data centers to smaller clusters and eventually to consumer hardware with high VRAM. It acknowledges hardware availability as a potential bottleneck, referencing concerns about access to sufficient local computing power.
 
 hackernews · cylo · May 10, 17:19 · [Discussion](https://news.ycombinator.com/item?id=48085821)
 
-**Background**: Current AI models often rely on centralized cloud services, raising concerns about privacy, cost, and vendor lock-in. Local AI runs models directly on user devices, offering more control but historically required significant computing power. Advances in hardware (e.g., Apple Silicon, AMD Strix Halo) and smaller, specialized models are closing the gap.
+**Background**: Local AI refers to running AI models directly on one's own hardware rather than relying on cloud-based APIs. This movement parallels the open source software revolution, where proprietary solutions were initially superior but eventually open alternatives gained traction.
 
-**Discussion**: Commenters compare local AI adoption to early open source, noting that 'good enough' models on consumer hardware could become the norm. Some express concern about entrenched interests resisting local AI, while others point to technical progress like 128GB VRAM laptops and specialized small models.
+**Discussion**: Comments draw historical analogies between local AI and open source, with some noting that the sentiment today mirrors early dismissals of open source. Others debate hardware constraints, with legitimate concerns about access to capable hardware, and note the irony of users complaining about Chrome's local AI model requiring a few GB of space.
 
-**Tags**: `#local AI`, `#open source`, `#privacy`, `#LLM`, `#decentralization`
+**Tags**: `#local AI`, `#open source`, `#hardware`, `#AI adoption`, `#community discussion`
 
 ---
 
 <a id="item-4"></a>
-## [Space Cadet Pinball Faithfully Recreated for Linux via Decompilation](https://brennan.io/2026/05/09/pinball-and-escrow/) ⭐️ 8.0/10
+## [Fictional CVE-2024-YIKES Depicts Rust Supply Chain Attack](https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html) ⭐️ 8.0/10
 
-A developer has created a faithful recreation of the classic Space Cadet Pinball game for Linux by decompiling the original Windows executable, without access to the original source code. This project preserves a beloved piece of gaming history and demonstrates the power of decompilation in software preservation, while the enthusiastic community response, including praise from the original authors, highlights its cultural significance. The recreation is pixel-perfect and includes ports to multiple consoles and a browser version; it was achieved solely through reverse engineering the binary, with no original source code used.
+A fictional but realistic incident report titled 'CVE-2024-YIKES' has been published, detailing a supply chain attack on the Rust ecosystem that exploits a transitive dependency of Cargo. This report serves as a cautionary tale, highlighting the critical need for improved security practices in open-source package management, particularly for Rust's Cargo and similar ecosystems. The attack involves exfiltrating credentials from a maintainer of a low-star library ('vulpine-lz4') that is a transitive dependency of Cargo, demonstrating how a seemingly insignificant crate can become a critical attack vector.
 
-hackernews · jandeboevrie · May 10, 11:22 · [Discussion](https://news.ycombinator.com/item?id=48082968)
+hackernews · miniBill · May 10, 17:43 · [Discussion](https://news.ycombinator.com/item?id=48086082)
 
-**Background**: Decompilation is the process of translating an executable file back into high-level source code, which is the reverse of compilation. Reverse engineering involves extracting information from a system to understand its design or recreate it. This project relied solely on these techniques to recreate the game without the original source code.
+**Background**: Supply chain attacks target dependencies in software projects to compromise downstream users. In the Rust ecosystem, Cargo manages packages from crates.io, and transitive dependencies can introduce vulnerabilities if a maintainer is compromised. This fictional scenario illustrates such an attack to raise awareness.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Decompilation">Decompilation</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Reverse_engineering">Reverse engineering</a></li>
+**Discussion**: Commenters appreciated the realistic fiction, with some initially worried it was real. They discussed the plausibility of the attack vector and noted humorous elements, while also expressing concerns about emerging threats from agentic development and the need for better security funding.
 
-</ul>
-</details>
-
-**Discussion**: The original author of Space Cadet Pinball expressed immense joy and forwarded the post to co-founders. Users noted the recreation's accuracy, and others pointed out ports to many consoles and a browser version. One commenter even shared a shop's pinball game inspired by it.
-
-**Tags**: `#retro gaming`, `#reverse engineering`, `#Linux`, `#open source`, `#nostalgia`
+**Tags**: `#supply chain security`, `#rust`, `#security`, `#incident response`, `#fiction`
 
 ---
 
 <a id="item-5"></a>
-## [Andrew Quinn on Reinventing Wheels for Understanding](https://simonwillison.net/2026/May/10/andrew-quinn/#atom-everything) ⭐️ 8.0/10
+## [Return to AWS Sparks Critique of Lock-in and Costs](http://fourlightyears.blogspot.com/2026/05/i-returned-to-aws-and-was-reminded-hard.html) ⭐️ 8.0/10
 
-Andrew Quinn argues that reinventing a few wheels (around four to five, up to twenty or thirty in rigorous fields) is necessary for deep understanding, but doing too many or too few is a trap. This insight challenges the common advice to never reinvent the wheel, offering a balanced approach that promotes genuine learning and mastery in software engineering and beyond. Quinn's footnote accompanies a post about replacing a 3 GB SQLite database with a 7 MB FST (finite-state transducer) binary, demonstrating practical reinvention. He distinguishes between reinventing for understanding versus for production use.
+A blog author describes returning to AWS after leaving and encountering the same frustrations with vendor lock-in, high data egress costs, and perceived mistreatment of open source projects. This personal account resonates with many developers, highlighting persistent concerns about cloud provider dependency, hidden costs, and ethical treatment of open source, which can influence migration decisions and industry practices. The post specifically criticizes AWS's slow and bureaucratic Data Transfer Out (DTO) process, tiered egress pricing starting at $0.09/GB, and AWS cloning open source projects like Elasticsearch (OpenSearch), Redis (Valkey), and MongoDB (DocumentDB), which led to defensive licenses like SSPL and Elastic License.
 
-rss · Simon Willison · May 10, 14:59
+hackernews · andrewstuart · May 9, 08:37 · [Discussion](https://news.ycombinator.com/item?id=48073201)
 
-**Background**: Finite-state transducers (FSTs) are computational models that map input strings to output strings, used in areas like natural language processing. The awk command is a classic Unix tool for pattern scanning and processing text. Reinventing the wheel refers to recreating existing solutions, which is often discouraged but, as Quinn argues, can be valuable for learning.
+**Background**: Vendor lock-in occurs when customers become dependent on a single cloud provider, making migration costly and difficult. AWS's egress charges apply to data transferred out of its network, with fees that can balloon unexpectedly. AWS has also faced controversy for forking popular open source projects to offer managed services, prompting license changes aimed at preventing such use.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Finite-state_transducer">Finite-state transducer</a></li>
-<li><a href="https://www.geeksforgeeks.org/nlp/finite-state-transducer-fsts-in-nlp/">Finite State Transducer (FSTs) in NLP - GeeksforGeeks</a></li>
-<li><a href="https://www.linkedin.com/posts/xmodulo_the-awk-command-is-a-versatile-tool-for-processing-activity-7322250375191818240-BoLS">The awk command is a versatile tool for processing text, enabling...</a></li>
+<li><a href="https://www.digitalocean.com/resources/articles/aws-egress-costs">Understanding AWS's Egress Costs | DigitalOcean</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vendor_lock-in">Vendor lock-in - Wikipedia</a></li>
+<li><a href="https://virtualizationreview.com/articles/2024/09/16/aws-open-source-brouhaha-about-elasticsearch-takes-another-turn.aspx">AWS Open-Source Brouhaha About... -- Virtualization Review</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#software engineering`, `#learning`, `#philosophy`, `#craftsmanship`, `#reuse`
+**Discussion**: Comments are polarized: some strongly agree about egress and open source treatment, while others argue AWS's complexity is fine for enterprise use. A common sentiment is that the critique oversimplifies AWS's value for large-scale deployments, but valid concerns about lock-in persist.
+
+**Tags**: `#AWS`, `#vendor lock-in`, `#cloud computing`, `#open source`, `#data egress`
 
 ---
 
 <a id="item-6"></a>
-## [NVIDIA Star Elastic Packs Three Reasoning Models in One Checkpoint](https://www.reddit.com/r/LocalLLaMA/comments/1t8s83r/nvidia_ai_releases_star_elastic_one_checkpoint/) ⭐️ 8.0/10
+## [Rossmann offers to pay legal fees for OrcaSlicer dev](https://www.tomshardware.com/3d-printing/louis-rossmann-tells-3d-printer-maker-bambu-lab-to-go-bleep-yourself-over-its-lawsuit-against-enthusiast-right-to-repair-advocate-offers-to-pay-the-legal-fees-for-a-threatened-orcaslicer-developer) ⭐️ 8.0/10
 
-NVIDIA released Star Elastic, a single checkpoint containing three reasoning models of sizes 30B, 23B, and 12B that can be extracted zero-shot via a learned router, sharing a KV cache for dynamic scaling. This innovation enables efficient local deployment by allowing users to dynamically scale compute per request without duplicating model weights or cache state, reducing VRAM overhead and enabling flexible reasoning strategies. The submodels are nested within a 30B parent checkpoint and can be extracted zero-shot in BF16, FP8, or NVFP4 precision; the shared KV cache across models accelerates inference by avoiding cache recomputation.
+Louis Rossmann, a prominent right-to-repair advocate, has offered to cover the legal fees for an OrcaSlicer developer threatened with a lawsuit by Bambu Lab over right-to-repair concerns. This highlights the growing tension between closed-source 3D printer companies and the open-source community over right-to-repair issues, and shows how influential figures can support developers facing legal intimidation. OrcaSlicer is an open-source 3D printing slicer that supports Bambu Lab printers; the threat reportedly stems from a fork that may have circumvented Bambu's authentication or proprietary protocols.
 
-reddit · r/LocalLLaMA · phazei · May 10, 00:48
+hackernews · iancmceachern · May 10, 14:47 · [Discussion](https://news.ycombinator.com/item?id=48084432)
 
-**Background**: Star Elastic applies a post-training method to Nemotron Nano v3, nesting smaller submodels that share weights and KV cache. This approach is analogous to scalable video coding where layers can be stripped to achieve different quality levels, and it combines ideas from dense and mixture-of-experts (MoE) architectures.
-
-**Discussion**: Some commenters expressed confusion about the benefit of nested submodels, questioning whether smaller models degrade reasoning quality and noting that results are not better than Qwen3 30B. Others praised the shared KV cache as the most impactful feature for deployment, and a few noted the cleverness of dynamically scaling within a single model.
-
-**Tags**: `#NVIDIA`, `#Star Elastic`, `#reasoning models`, `#efficient deployment`, `#KV cache`
-
----
-
-<a id="item-7"></a>
-## [Report Exposes Chinese Grey Market for Claude API with Data Theft](https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-grey-market-sells-claude-api-access-at-90-percent-off-through-proxy-networks-that-harvest-user-data) ⭐️ 8.0/10
-
-A report reveals that Chinese grey market API proxy services offer access to Anthropic's Claude models at up to 90% off the official price, using methods like stolen credit cards, batch-registered accounts, and subscription splitting, while also engaging in data theft and model swapping. This is significant because it exposes serious security risks for users who unknowingly compromise their proprietary code and data, and undermines the business model of AI providers like Anthropic. It also highlights the growing grey market for AI APIs, which could lead to increased regulation and security measures. The report notes that some services swap models, returning outputs from cheaper local models instead of Claude Opus, and all services collect user prompts and outputs for model distillation. These practices violate Anthropic's terms of service and pose legal and ethical risks.
-
-telegram · zaihuapd · May 10, 01:48
-
-**Background**: API proxy services act as intermediaries between users and backend services, often used for load balancing or access control. In this case, they are used to resell API access without authorization. Model distillation is a technique where knowledge from a large model is transferred to a smaller, cheaper model, often used to improve efficiency. However, unauthorized distillation using stolen data is illegal and unethical.
+**Background**: OrcaSlicer is a free, open-source slicer software derived from Bambu Studio and SuperSlicer. Bambu Lab is a Chinese company known for popular desktop 3D printers like the X1 Carbon. The right-to-repair movement advocates for users' ability to repair and modify devices without manufacturer restrictions. Louis Rossmann is a well-known YouTuber and right-to-repair advocate.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Model_distillation">Model distillation</a></li>
-<li><a href="https://oxylabs.io/blog/what-is-proxy-server">What is a Proxy Server? Meaning, Types, Uses & More</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bambu_Lab">Bambu Lab - Wikipedia</a></li>
+<li><a href="https://www.orcaslicer.com/download/">Download OrcaSlicer — Free 3D Printing Slicer Software</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#API security`, `#AI safety`, `#grey market`, `#Claude`, `#data theft`
+**Discussion**: Comments show strong support for Rossmann, with users criticizing Bambu Lab for anti-consumer practices like attempted elimination of offline access. Some express frustration with Bambu's proprietary ecosystem, and overall sentiment is positive towards Rossmann and negative towards Bambu Lab.
+
+**Tags**: `#3d-printing`, `#right-to-repair`, `#open-source`, `#legal`, `#community`
+
+---
+
+<a id="item-7"></a>
+## [Space Cadet Pinball Ported to Linux via Decompilation](https://brennan.io/2026/05/09/pinball-and-escrow/) ⭐️ 8.0/10
+
+A fan project has successfully ported the classic Windows game Space Cadet Pinball to Linux and other platforms entirely through decompilation, recreating the game with high accuracy without using original source code. This preservation effort demonstrates the power of decompilation in keeping classic software alive, and it has delighted the original developers, highlighting the importance of community-driven game preservation. The port was achieved solely by reverse-engineering the original executable without access to source code, and it has also been ported to numerous game consoles and made playable in a web browser.
+
+hackernews · jandeboevrie · May 10, 11:22 · [Discussion](https://news.ycombinator.com/item?id=48082968)
+
+**Background**: Decompilation is the process of translating machine code back into a higher-level language, often yielding obfuscated code that requires significant manual work to clean up. Space Cadet Pinball was originally bundled with Windows 95/NT 4.0 and was part of the larger game Full Tilt! Pinball by Maxis.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Decompilation">Decompilation</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Original author davidst expressed joy and forwarded the post to co-founders. Commenters noted the recreation's remarkable accuracy and pointed out additional ports including a browser version (pinball.alula.me) and a Visual Pinball version on archive.org.
+
+**Tags**: `#game preservation`, `#Linux`, `#decompilation`, `#retro gaming`, `#open source`
 
 ---

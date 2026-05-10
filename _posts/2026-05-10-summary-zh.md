@@ -5,151 +5,154 @@ date: 2026-05-10
 lang: zh
 ---
 
-> From 24 items, 7 important content pieces were selected
+> From 32 items, 7 important content pieces were selected
 
 ---
 
-1. [虚构事件报告引发真实的供应链安全讨论](#item-1) ⭐️ 9.0/10
-2. [欧盟数字钱包通过硬件认证将身份绑定至谷歌/苹果](#item-2) ⭐️ 8.0/10
+1. [硬件认证成为欧盟数字钱包的垄断助推器](#item-1) ⭐️ 9.0/10
+2. [数学家测试 ChatGPT 5.5 Pro 解决温和问题](#item-2) ⭐️ 9.0/10
 3. [本地 AI 必须成为常态](#item-3) ⭐️ 8.0/10
-4. [通过反编译在 Linux 上忠实还原太空军校生弹球](#item-4) ⭐️ 8.0/10
-5. [Andrew Quinn 谈为理解而重新发明轮子](#item-5) ⭐️ 8.0/10
-6. [NVIDIA Star Elastic 将三个推理模型打包到一个检查点中](#item-6) ⭐️ 8.0/10
-7. [报告揭秘中国 Claude API 灰产：数据窃取与模型掉包](#item-7) ⭐️ 8.0/10
+4. [虚构的 CVE-2024-YIKES 描述 Rust 供应链攻击](#item-4) ⭐️ 8.0/10
+5. [重返 AWS 引发锁定效应和成本的批评](#item-5) ⭐️ 8.0/10
+6. [罗斯曼愿为 OrcaSlicer 开发者支付法律费用](#item-6) ⭐️ 8.0/10
+7. [通过反编译将太空军校生弹球移植到 Linux](#item-7) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [虚构事件报告引发真实的供应链安全讨论](https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html) ⭐️ 9.0/10
+## [硬件认证成为欧盟数字钱包的垄断助推器](https://grapheneos.social/@GrapheneOS/116550899908879585) ⭐️ 9.0/10
 
-一篇题为“CVE-2024-YIKES”的详细虚构事件报告被发布，描述了一次通过受污染的传递依赖对 Rust 包生态系统进行的复杂供应链攻击。 这个富有创意的叙述突显了现代软件供应链中的关键安全漏洞，特别是围绕传递依赖和维护者信任的问题。它引发了高质量的社区讨论，反映出对供应链安全的日益关注和参与。 该攻击利用了只有 12 个 GitHub 星标的 Rust 库'vulpine-lz4'，该库本身是 cargo 的传递依赖。攻击者通过虚假的欧洲百万彩票中奖和 YubiKey 钓鱼攻击入侵了维护者。
-
-hackernews · miniBill · May 10, 17:43 · [社区讨论](https://news.ycombinator.com/item?id=48086082)
-
-**背景**: 供应链攻击通过破坏许多项目信任的依赖项来针对软件构建过程。传递依赖，即依赖项的依赖项，可能在不知情的情况下引入漏洞。Rust 社区越来越关注保护 cargo 包管理器及其生态系统的安全。
-
-**社区讨论**: 评论赞扬了这篇虚构作品的真实性和教育价值，用户表示它曾让他们暂时感到担忧。有关于哪些 crate 可能被破坏以影响 cargo 构建的技术讨论，以及对“狗吃了 YubiKey”根本原因的幽默反应。
-
-**标签**: `#supply chain security`, `#incident response`, `#cybersecurity fiction`, `#open source`, `#community discussion`
-
----
-
-<a id="item-2"></a>
-## [欧盟数字钱包通过硬件认证将身份绑定至谷歌/苹果](https://grapheneos.social/@GrapheneOS/116550899908879585) ⭐️ 8.0/10
-
-欧盟数字身份钱包（EUDI Wallet）要求使用由谷歌或苹果提供的硬件认证，实际上迫使所有欧洲数字身份依赖于美国双寡头平台。 这一要求通过巩固谷歌和苹果在数字身份上的垄断权力，破坏了欧洲的数字主权和隐私，并可能通过认证数据包实现用户追踪。 认证过程未使用零知识证明或盲签名技术，意味着每次认证都会留下一个可链接的数据包，从而将操作与特定设备关联起来。
+GrapheneOS 社交媒体上的一篇文章指出，要求欧盟数字身份钱包使用苹果和谷歌的硬件认证，会巩固它们的垄断地位，并破坏数字主权和隐私。 这一批评揭示了出于善意制定的安全要求可能无意间加强苹果和谷歌的双头垄断，损害数字主权和隐私。同时，它还引发了对钱包设计缺乏零知识证明的担忧，这可能使得跟踪成为可能。 该文章特别指出，欧盟数字身份钱包要求由谷歌或苹果提供硬件认证，从而将数字身份与它们的平台捆绑。社区评论还提到，该系统未使用零知识证明或盲签名，可能使操作与设备关联成为可能。
 
 hackernews · ChuckMcM · May 10, 17:54 · [社区讨论](https://news.ycombinator.com/item?id=48086190)
 
-**背景**: 硬件认证使用防篡改安全芯片（如 TPM）来验证设备的启动过程和软件完整性。欧盟数字身份钱包（EUDI Wallet）是一款用于证明身份和共享已验证属性的移动应用。要求谷歌或苹果认证实际上排除了没有谷歌或苹果硬件支持认证的设备。
+**背景**: 硬件认证是一种安全机制，设备通过防篡改芯片（如 TPM 或硬件密钥库）证明其真实性。欧盟数字身份钱包是一项为欧盟公民提供标准化数字身份的计划。批评者认为，要求由占主导地位的移动操作系统提供商提供硬件认证，将控制权拱手让给它们，违背了数字主权的目标。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://developer.android.com/privacy-and-security/security-key-attestation">Verify hardware-backed key pairs with key attestation | Security | Android Developers</a></li>
 <li><a href="https://en.wikipedia.org/wiki/EU_Digital_Identity_Wallet">EU Digital Identity Wallet - Wikipedia</a></li>
+<li><a href="https://developer.android.com/privacy-and-security/security-key-attestation">Verify hardware-backed key pairs with key attestation | Security | Android Developers</a></li>
 <li><a href="https://aembit.io/blog/attestation-based-identity-hardware-cloud-security/">Attestation-Based Identity: How It Works and Why It Matters</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者表示强烈反对，指出历史上曾有人抵制这种集中控制（如 1999 年英特尔的序列号事件）。他们认为缺乏零知识证明加剧了隐私风险，并呼吁采用替代方法以允许在制造后修改微电子产品。
+**社区讨论**: 评论表达了强烈的反对，用户指出欧盟要求美国公司提供认证具有讽刺意味。一位评论者强调，缺少零知识证明是更严重的问题，因为它允许关联。另一位评论者追溯了反对硬件序列号和 TPM 的历史，认为安全宣传导致了围墙花园的出现。
 
-**标签**: `#hardware attestation`, `#digital identity`, `#privacy`, `#monopoly`, `#EU`
+**标签**: `#hardware attestation`, `#digital sovereignty`, `#privacy`, `#monopoly`, `#EU digital wallet`
+
+---
+
+<a id="item-2"></a>
+## [数学家测试 ChatGPT 5.5 Pro 解决温和问题](https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/) ⭐️ 9.0/10
+
+一位著名数学家发表了使用 ChatGPT 5.5 Pro 的详细记录，指出它能够解决通常用于训练博士生新手的‘温和问题’。 这表明大语言模型可能很快就能处理通常用于培训新研究人员的问题，这可能会显著改变研究教育的格局以及数学工作的性质。 根据文章和评论，虽然 ChatGPT 5.5 Pro 能够解决简单问题并自我纠正，但仍需严格指导，且使用成本高昂。
+
+hackernews · _alternator_ · May 9, 02:41 · [社区讨论](https://news.ycombinator.com/item?id=48071262)
+
+**背景**: 在数学中，‘温和问题’是精心挑选的、略高于学生当前能力的问题，用于培养研究技能。LLM 解决这类问题的能力挑战了传统的新研究人员指导方法。
+
+**社区讨论**: 评论者普遍同意作者的评估，指出 ChatGPT 5.5 Pro 是第一个他们能够驾驭来解决简单问题的模型，尽管成本高昂。一位物理学教授分享了与 Gemini 类似的经历，称赞其发现错误的能力，但也指出概念性错误。此外，还有关于当想法变得容易产生时其价值的哲学辩论。
+
+**标签**: `#ChatGPT`, `#LLM`, `#AI`, `#mathematics`, `#research`
 
 ---
 
 <a id="item-3"></a>
 ## [本地 AI 必须成为常态](https://unix.foo/posts/local-ai-needs-to-be-norm/) ⭐️ 8.0/10
 
-一篇评论文章主张本地 AI 应成为标准，将其与开源运动相类比，并指出硬件和模型改进正使本地推理变得可行。 减少对 OpenAI 和 Anthropic 等集中式 AI 服务的依赖可增强隐私、控制和韧性，可能像开源改变软件那样重塑 AI 生态。 评论指出模型需要“足够好”并能在消费级设备上运行，硬件正从数据中心发展到 128GB VRAM 的笔记本，使本地推理与远程规划模型并行成为可能。
+一篇博客文章主张本地 AI 应成为常态，将其与历史上从专有软件向开源软件的转变相类比，并讨论了当前对 Anthropic 和 OpenAI 等公司远程 AI 服务的依赖。 这一点很重要，因为它挑战了当前集中式 AI 服务模式，并强调了供应商锁定、隐私问题和可访问性风险。讨论反映了社区对本地、用户控制的 AI 替代方案日益增长的渴望。 该文章指出，本地 AI 的采用正在从大型数据中心发展到小型集群，最终将发展到具有高显存的消费级硬件。它承认硬件可用性是一个潜在瓶颈，提及了对足够本地计算能力获取的担忧。
 
 hackernews · cylo · May 10, 17:19 · [社区讨论](https://news.ycombinator.com/item?id=48085821)
 
-**背景**: 当前的 AI 模型通常依赖集中式云服务，引发隐私、成本和供应商锁定的担忧。本地 AI 直接在用户设备上运行模型，提供更多控制，但历史上需要大量计算能力。硬件（如 Apple Silicon、AMD Strix Halo）和更小、更专门的模型的进步正在缩小差距。
+**背景**: 本地 AI 指在自己的硬件上直接运行 AI 模型，而非依赖云端 API。这一运动与开源软件革命相似，专有解决方案最初更优越，但最终开源替代品获得了发展动力。
 
-**社区讨论**: 评论者将本地 AI 的采用比作早期开源，指出消费者硬件上的“足够好”模型可能成为常态。一些人担心既得利益者会抵制本地 AI，而另一些人则指出技术进展，如 128GB VRAM 的笔记本电脑和专门的小型模型。
+**社区讨论**: 评论将本地 AI 与开源进行历史类比，指出今天的情绪与早期对开源的不屑相似。其他人则争论硬件限制，对获取足够硬件的合法担忧，并指出用户抱怨 Chrome 本地 AI 模型需要几 GB 空间的讽刺之处。
 
-**标签**: `#local AI`, `#open source`, `#privacy`, `#LLM`, `#decentralization`
+**标签**: `#local AI`, `#open source`, `#hardware`, `#AI adoption`, `#community discussion`
 
 ---
 
 <a id="item-4"></a>
-## [通过反编译在 Linux 上忠实还原太空军校生弹球](https://brennan.io/2026/05/09/pinball-and-escrow/) ⭐️ 8.0/10
+## [虚构的 CVE-2024-YIKES 描述 Rust 供应链攻击](https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html) ⭐️ 8.0/10
 
-一位开发者通过反编译原始 Windows 可执行文件，在没有原始源代码的情况下，为 Linux 系统忠实还原了经典游戏《太空军校生弹球》。 该项目保留了备受喜爱的游戏历史，展示了反编译在软件保护中的强大作用，而包括原作者在内的社区热烈反响则凸显了其文化意义。 该复刻版实现了像素级完美还原，并被移植到多种游戏机和浏览器版本；它完全通过逆向工程二进制文件实现，未使用任何原始源代码。
+一份名为“CVE-2024-YIKES”的虚构但现实的 incident report 已发布，详细描述了针对 Rust 生态系统的供应链攻击，该攻击利用了 Cargo 的传递依赖。 这份报告是一个警示故事，强调在开源包管理中改进安全实践的迫切需要，特别是对于 Rust 的 Cargo 及类似生态系统。 该攻击涉及窃取一个低星库（'vulpine-lz4'）维护者的凭证，该库是 Cargo 的传递依赖，展示了一个看似不重要的 crate 如何成为关键攻击向量。
 
-hackernews · jandeboevrie · May 10, 11:22 · [社区讨论](https://news.ycombinator.com/item?id=48082968)
+hackernews · miniBill · May 10, 17:43 · [社区讨论](https://news.ycombinator.com/item?id=48086082)
 
-**背景**: 反编译是将可执行文件翻译回高级源代码的过程，与编译过程相反。逆向工程涉及从系统中提取信息以理解其设计或重建它。该项目完全依赖这些技术，在没有原始源代码的情况下重建了游戏。
+**背景**: 供应链攻击针对软件项目中的依赖关系以危害下游用户。在 Rust 生态系统中，Cargo 管理来自 crates.io 的包，如果维护者被攻破，传递依赖可能引入漏洞。这个虚构场景旨在通过此类攻击提高安全意识。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Decompilation">Decompilation</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Reverse_engineering">Reverse engineering</a></li>
+**社区讨论**: 评论者欣赏这种现实的虚构，有些人最初担心这是真实的。他们讨论了攻击向量的合理性，并注意到了幽默元素，同时也对来自代理开发的新兴威胁以及需要更好的安全资金表示担忧。
 
-</ul>
-</details>
-
-**社区讨论**: 《太空军校生弹球》的原作者表达了极大的喜悦，并将帖子转发给了联合创始人。用户称赞了复刻版的准确性，还有人指出了其被移植到多种游戏机和浏览器版本。一位评论者甚至分享了受此启发而开发的商店弹球游戏。
-
-**标签**: `#retro gaming`, `#reverse engineering`, `#Linux`, `#open source`, `#nostalgia`
+**标签**: `#supply chain security`, `#rust`, `#security`, `#incident response`, `#fiction`
 
 ---
 
 <a id="item-5"></a>
-## [Andrew Quinn 谈为理解而重新发明轮子](https://simonwillison.net/2026/May/10/andrew-quinn/#atom-everything) ⭐️ 8.0/10
+## [重返 AWS 引发锁定效应和成本的批评](http://fourlightyears.blogspot.com/2026/05/i-returned-to-aws-and-was-reminded-hard.html) ⭐️ 8.0/10
 
-Andrew Quinn 认为，重新发明少量轮子（大约四到五个，在严谨领域可达二十到三十个）对于深入理解是必要的，但做得太多或太少都是陷阱。 这一见解挑战了'永远不要重新发明轮子'的常见建议，提供了一种平衡的方法，促进软件工程等领域的真正学习和精通。 Quinn 的脚注附在一篇关于用 7 MB 的 FST（有限状态转换器）二进制文件替换 3 GB 的 SQLite 数据库的文章之后，展示了实际的重新发明。他区分了为了理解的重新发明和为了生产使用的重新发明。
+一位博客作者描述了在离开后重返 AWS，再次遭遇供应商锁定、高昂的数据出口费用以及对待开源项目的不当做法。 这篇个人叙述引起许多开发者的共鸣，凸显了对云供应商依赖、隐性成本以及开源伦理的持续担忧，可能影响迁移决策和行业实践。 该文章具体批评了 AWS 缓慢且官僚的数据传出（DTO）流程、从 0.09 美元/GB 起步的阶梯式出口定价，以及 AWS 克隆 Elasticsearch（OpenSearch）、Redis（Valkey）和 MongoDB（DocumentDB）等开源项目，导致 SSPL 和 Elastic License 等防御性许可证的出现。
 
-rss · Simon Willison · May 10, 14:59
+hackernews · andrewstuart · May 9, 08:37 · [社区讨论](https://news.ycombinator.com/item?id=48073201)
 
-**背景**: 有限状态转换器（FST）是一种将输入字符串映射到输出字符串的计算模型，用于自然语言处理等领域。awk 命令是一个经典的 Unix 工具，用于模式扫描和处理文本。'重新发明轮子'指的是重新创建现有的解决方案，通常不被鼓励，但正如 Quinn 所说，这对学习可能很有价值。
+**背景**: 供应商锁定是指客户过度依赖单一云服务商，导致迁移成本高昂且困难。AWS 对传出网络的数据收取出口费用，费用可能意外膨胀。AWS 还因分叉流行开源项目以提供托管服务而引发争议，导致这些项目修改许可证以阻止此类使用。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Finite-state_transducer">Finite-state transducer</a></li>
-<li><a href="https://www.geeksforgeeks.org/nlp/finite-state-transducer-fsts-in-nlp/">Finite State Transducer (FSTs) in NLP - GeeksforGeeks</a></li>
-<li><a href="https://www.linkedin.com/posts/xmodulo_the-awk-command-is-a-versatile-tool-for-processing-activity-7322250375191818240-BoLS">The awk command is a versatile tool for processing text, enabling...</a></li>
+<li><a href="https://www.digitalocean.com/resources/articles/aws-egress-costs">Understanding AWS's Egress Costs | DigitalOcean</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vendor_lock-in">Vendor lock-in - Wikipedia</a></li>
+<li><a href="https://virtualizationreview.com/articles/2024/09/16/aws-open-source-brouhaha-about-elasticsearch-takes-another-turn.aspx">AWS Open-Source Brouhaha About... -- Virtualization Review</a></li>
 
 </ul>
 </details>
 
-**标签**: `#software engineering`, `#learning`, `#philosophy`, `#craftsmanship`, `#reuse`
+**社区讨论**: 评论呈现两极分化：一些人强烈赞同关于出口费用和开源待遇的观点，而另一些人则认为 AWS 的复杂性适合企业使用。普遍观点是批评简化了 AWS 对大规模部署的价值，但对锁定的合理担忧仍然存在。
+
+**标签**: `#AWS`, `#vendor lock-in`, `#cloud computing`, `#open source`, `#data egress`
 
 ---
 
 <a id="item-6"></a>
-## [NVIDIA Star Elastic 将三个推理模型打包到一个检查点中](https://www.reddit.com/r/LocalLLaMA/comments/1t8s83r/nvidia_ai_releases_star_elastic_one_checkpoint/) ⭐️ 8.0/10
+## [罗斯曼愿为 OrcaSlicer 开发者支付法律费用](https://www.tomshardware.com/3d-printing/louis-rossmann-tells-3d-printer-maker-bambu-lab-to-go-bleep-yourself-over-its-lawsuit-against-enthusiast-right-to-repair-advocate-offers-to-pay-the-legal-fees-for-a-threatened-orcaslicer-developer) ⭐️ 8.0/10
 
-这一创新允许用户根据请求动态缩放计算资源，而无需复制模型权重或缓存状态，从而降低显存开销并支持灵活推理策略，实现高效的本地部署。 子模型嵌套在 30B 父检查点内，可以零样本提取为 BF16、FP8 或 NVFP4 精度；模型间共享 KV 缓存可避免缓存重新计算，从而加速推理。
+知名维修权倡导者路易斯·罗斯曼表示，愿意为一位受到 Bambu Lab（拓竹科技）法律威胁的 OrcaSlicer 开发者支付法律费用，此事涉及维修权争议。 此事凸显了闭源 3D 打印公司同开源社区在维修权问题上的日益紧张关系，也展示了有影响力的社区人物如何在开发者面临法律威胁时提供支持。 OrcaSlicer 是一款支持 Bambu Lab 打印机的开源 3D 打印切片软件；据称，威胁源自一个可能绕过了 Bambu 认证或专有协议的 OrcaSlicer 分支。
 
-reddit · r/LocalLLaMA · phazei · May 10, 00:48
+hackernews · iancmceachern · May 10, 14:47 · [社区讨论](https://news.ycombinator.com/item?id=48084432)
 
-**背景**: Star Elastic 对 Nemotron Nano v3 应用后训练方法，嵌套共享权重和 KV 缓存的较小子模型。这种方法类似于可伸缩视频编码，可以剥离层以达到不同质量级别，并结合了密集模型和混合专家（MoE）架构的思想。
-
-**社区讨论**: 一些评论者对嵌套子模型的好处表示困惑，质疑较小模型是否会降低推理质量，并指出结果并不优于 Qwen3 30B。其他人则称赞共享 KV 缓存是部署中最有影响力的特性，还有一些人注意到在单个模型内动态缩放的做法很巧妙。
-
-**标签**: `#NVIDIA`, `#Star Elastic`, `#reasoning models`, `#efficient deployment`, `#KV cache`
-
----
-
-<a id="item-7"></a>
-## [报告揭秘中国 Claude API 灰产：数据窃取与模型掉包](https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-grey-market-sells-claude-api-access-at-90-percent-off-through-proxy-networks-that-harvest-user-data) ⭐️ 8.0/10
-
-一份报告揭露，中国灰产 API 代理服务以低至官方价格一折的方式提供 Anthropic 的 Claude 模型访问权限，手段包括盗刷信用卡、批量注册账号和拆分订阅套餐，同时存在数据窃取和模型掉包行为。 这很重要，因为它暴露了用户在不知情的情况下泄露专有代码和数据的安全风险，并破坏了 Anthropic 等 AI 提供商的商业模式。同时，这也凸显了 AI API 灰产的日益增长，可能导致更严格的监管和安全措施。 报告指出，部分服务商更换模型，用廉价国产模型的输出代替 Claude Opus，且所有服务都会收集用户提示和输出用于模型蒸馏。这些做法违反 Anthropic 的服务条款，并带来法律和道德风险。
-
-telegram · zaihuapd · May 10, 01:48
-
-**背景**: API 代理服务充当用户与后端服务之间的中介，通常用于负载均衡或访问控制。在本案中，它们被用于未经授权转售 API 访问权限。模型蒸馏是一种将大模型知识转移到更小、更便宜模型的技术，通常用于提高效率。但使用窃取的数据进行未经授权的蒸馏是非法的且不道德的。
+**背景**: OrcaSlicer 是一款免费开源切片软件，源自 Bambu Studio 和 SuperSlicer。Bambu Lab（拓竹科技）是一家中国公司，以 X1 Carbon 等热门桌面 3D 打印机闻名。维修权运动倡导用户有权维修和修改设备而不受制造商限制。路易斯·罗斯曼是知名 YouTuber 和维修权倡导者。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Model_distillation">Model distillation</a></li>
-<li><a href="https://oxylabs.io/blog/what-is-proxy-server">What is a Proxy Server? Meaning, Types, Uses & More</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bambu_Lab">Bambu Lab - Wikipedia</a></li>
+<li><a href="https://www.orcaslicer.com/download/">Download OrcaSlicer — Free 3D Printing Slicer Software</a></li>
 
 </ul>
 </details>
 
-**标签**: `#API security`, `#AI safety`, `#grey market`, `#Claude`, `#data theft`
+**社区讨论**: 评论对罗斯曼表示强烈支持，用户批评 Bambu Lab 的反消费者行为，如试图取消离线访问。一些人对 Bambu 的专有生态系统表示不满，总体情绪对罗斯曼持正面态度，对 Bambu Lab 持负面态度。
+
+**标签**: `#3d-printing`, `#right-to-repair`, `#open-source`, `#legal`, `#community`
+
+---
+
+<a id="item-7"></a>
+## [通过反编译将太空军校生弹球移植到 Linux](https://brennan.io/2026/05/09/pinball-and-escrow/) ⭐️ 8.0/10
+
+一个爱好者项目成功通过反编译将经典 Windows 游戏《太空军校生弹球》移植到 Linux 及其他平台，在未使用原始源代码的情况下高精度重现了游戏。 这一保存工作展示了反编译在让经典软件焕发新生方面的力量，并让原开发者倍感欣喜，凸显了社区驱动游戏保护的重要性。 该移植完全通过逆向工程原始可执行文件完成，没有使用源代码，并且还被移植到了众多游戏机平台，并可通过网页浏览器游玩。
+
+hackernews · jandeboevrie · May 10, 11:22 · [社区讨论](https://news.ycombinator.com/item?id=48082968)
+
+**背景**: 反编译是将机器码翻译回高级语言的过程，通常会得到混淆的代码，需要大量手动清理工作。《太空军校生弹球》最初随 Windows 95/NT 4.0 捆绑发行，是 Maxis 开发的更大游戏《Full Tilt! Pinball》的一部分。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Decompilation">Decompilation</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 原开发者 davidst 表达了喜悦之情，并将帖子转发给了联合创始人。评论者指出该复刻版惊人地准确，并提到了其他移植版本，包括浏览器版本 (pinball.alula.me) 和 Archive.org 上的 Visual Pinball 版本。
+
+**标签**: `#game preservation`, `#Linux`, `#decompilation`, `#retro gaming`, `#open source`
 
 ---
