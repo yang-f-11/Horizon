@@ -5,156 +5,202 @@ date: 2026-05-10
 lang: en
 ---
 
-> From 19 items, 6 important content pieces were selected
+> From 19 items, 8 important content pieces were selected
 
 ---
 
-1. [Hardware Attestation as Monopoly Enabler](#item-1) ⭐️ 8.0/10
-2. [Local AI Should Become the Norm](#item-2) ⭐️ 8.0/10
-3. [Fictional Incident Report Sparks Real Supply Chain Security Debate](#item-3) ⭐️ 8.0/10
-4. [Rossmann Offers Legal Fees for Threatened OrcaSlicer Dev](#item-4) ⭐️ 8.0/10
-5. [Space Cadet Pinball Revived on Linux via Reverse Engineering](#item-5) ⭐️ 8.0/10
-6. [xAI's Grok Build tool leaks; plans 10 trillion parameter model](#item-6) ⭐️ 8.0/10
+1. [Hardware Attestation Ties EU Digital Identity to US Duopoly](#item-1) ⭐️ 8.0/10
+2. [Make Local AI the Norm](#item-2) ⭐️ 8.0/10
+3. [Fictional Rust Supply-Chain Attack Report Sparks Security Debate](#item-3) ⭐️ 8.0/10
+4. [Louis Rossmann offers to pay legal fees for threatened OrcaSlicer developer](#item-4) ⭐️ 8.0/10
+5. [Space Cadet Pinball Ported to Linux via Decompilation](#item-5) ⭐️ 8.0/10
+6. [Leaked Grok Build Shows xAI's Ambitious Coding AI Plans](#item-6) ⭐️ 8.0/10
+7. [AI Coding Tools and Task Paralysis](#item-7) ⭐️ 7.0/10
+8. [Report Exposes Chinese Grey Market for Claude API with Data Theft](#item-8) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Hardware Attestation as Monopoly Enabler](https://grapheneos.social/@GrapheneOS/116550899908879585) ⭐️ 8.0/10
+## [Hardware Attestation Ties EU Digital Identity to US Duopoly](https://grapheneos.social/@GrapheneOS/116550899908879585) ⭐️ 8.0/10
 
-The EU Digital Identity Wallet (EUDI Wallet) requires hardware attestation from Google or Apple, effectively mandating that users have a device approved by these two American companies to use their digital identity. This ties EU digital identity to a US duopoly, undermining digital sovereignty and locking out open-source or alternative operating systems, which could have major implications for privacy and competition. The attestation relies on hardware-bound keys and certificates, and critics argue that it does not use zero-knowledge proofs or blind signatures, meaning each attestation packet can link a user's device to their actions.
+The EU Digital Identity Wallet (EUDI) requires hardware attestation from Google or Apple, effectively tying European digital identities to the American tech duopoly. This raises serious sovereignty and privacy concerns. This mandate undermines digital sovereignty and user privacy by locking citizens into proprietary ecosystems. Without zero-knowledge proofs, attestation packets can link actions to specific devices, enabling tracking and surveillance. The attestation uses static device IDs to acquire ephemeral IDs, allowing linkage of actions over time. Physical bypass techniques, such as DRAM bitflip attacks, exist even for strong integrity levels.
 
 hackernews · ChuckMcM · May 10, 17:54 · [Discussion](https://news.ycombinator.com/item?id=48086190)
 
-**Background**: Hardware attestation is a security mechanism where a device proves its identity and integrity using manufacturer-issued certificates stored in a secure element. The EU Digital Identity Wallet, mandated by Regulation (EU) 2024/1183, aims to provide a common digital identity across member states. Critics compare this to earlier controversies like Intel's CPU serial numbers in 1999 and the push for TPMs.
+**Background**: Hardware attestation is a security mechanism that verifies a device's integrity using tamper-resistant hardware, such as Trusted Platform Modules (TPMs) or secure enclaves provided by manufacturers like Google and Apple. The EUDI wallet aims to standardize digital identity across EU member states, but its reliance on proprietary attestation conflicts with principles of openness and self-sovereign identity. This controversy echoes past opposition to Intel's processor serial numbers in 1999 and the ongoing debate over Trusted Computing.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/EU_Digital_Identity_Wallet">EU Digital Identity Wallet - Wikipedia</a></li>
-<li><a href="https://source.android.com/docs/security/features/keystore/attestation">Key and ID attestation | Android Open Source Project</a></li>
-<li><a href="https://ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTITYWALLET/pages/694487738/EU+Digital+Identity+Wallet+Home">EU Digital Identity Wallet Home - EU Digital Identity Wallet -</a></li>
+<li><a href="https://developer.android.com/privacy-and-security/security-key-attestation">Verify hardware-backed key pairs with key attestation</a></li>
+<li><a href="https://sesamedisk.com/hardware-attestation-monopoly-2026/">Hardware Attestation as Monopoly Enabler: How 2026’s Security ...</a></li>
+<li><a href="https://www.biometricupdate.com/202502/eudi-wallet-sees-progress-but-also-criticism">EUDI Wallet sees progress but also criticism | Biometric Update</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters express strong concerns about privacy and monopoly, noting that tying identity to Google or Apple hardware undermines digital sovereignty. Some point out the lack of zero-knowledge techniques, which allows tracking, while others draw historical parallels to the opposition against Intel's CPU serial numbers.
+**Discussion**: Commenters criticize the lack of privacy-preserving features like zero-knowledge proofs, noting that static device IDs can be used to track users. Some point out practical bypass techniques, including physical fault injection attacks, and argue that the requirement repeats past mistakes with hardware serial numbers.
 
-**Tags**: `#hardware attestation`, `#EU digital identity`, `#monopoly`, `#privacy`, `#security`
+**Tags**: `#hardware attestation`, `#digital identity`, `#privacy`, `#monopoly`, `#EUDI wallet`
 
 ---
 
 <a id="item-2"></a>
-## [Local AI Should Become the Norm](https://unix.foo/posts/local-ai-needs-to-be-norm/) ⭐️ 8.0/10
+## [Make Local AI the Norm](https://unix.foo/posts/local-ai-needs-to-be-norm/) ⭐️ 8.0/10
 
-A blog post argues that local AI should become the standard to reduce dependence on centralized providers, drawing a direct parallel to the open source movement. This matters because over-reliance on centralized AI providers like OpenAI and Anthropic creates privacy risks and vendor lock-in, similar to the issues that open source solved in software. Local AI models are already feasible on consumer hardware, with examples like Chrome's built-in Prompt API using an on-device LLM that takes only a couple of GB.
+A blog post argues that local AI should become the norm, drawing parallels to the open-source movement and criticizing the over-reliance on remote API-based AI models like those from OpenAI and Anthropic. This shift could reduce dependency on centralized AI providers, improve data privacy, and foster innovation by enabling anyone to run powerful models locally. It challenges the current industry trend of cloud-only AI. The author draws explicit parallels between the early resistance to open-source software and current skepticism toward local AI. Community comments note that while remote models currently outperform local ones, hardware progress (e.g., 128GB VRAM laptops) is rapidly closing the gap.
 
 hackernews · cylo · May 10, 17:19 · [Discussion](https://news.ycombinator.com/item?id=48085821)
 
-**Background**: Local AI refers to running AI models on a user's own device rather than on remote servers. Cloud-based AI offers more power but raises privacy and dependency concerns. The argument draws a parallel to the early days of open source, where proprietary solutions dominated but eventually gave way to community-driven alternatives.
+**Background**: Local AI refers to running AI models directly on a user's device rather than sending data to cloud servers. Tools like LocalAI provide OpenAI-compatible APIs for local inference. The open-source movement similarly shifted from proprietary software to community-driven alternatives, which the author argues is a model for local AI adoption.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://surfiai.com/how-to-run-ai-locally-without-the-headache/">How to Run AI Locally Without the Headache – SurfiAI – AI-Powered...</a></li>
-<li><a href="https://appflowy.com/blog/5-Shocking-Local-AI-Secrets-Big-Tech-Doesn't-Want-You-to-Know">5 Shocking Local AI Secrets Big Tech Doesn't Want You to Know</a></li>
-<li><a href="https://grokipedia.com/page/Local_AI_vs_cloud_AI">Local AI vs. cloud AI</a></li>
+<li><a href="https://localai.io/">LocalAI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Distributed_artificial_intelligence">Distributed artificial intelligence - Wikipedia</a></li>
+<li><a href="https://prajnaaiwisdom.medium.com/what-is-local-llm-inference-a-beginners-guide-b31043768d4f">What Is Local LLM Inference? A Beginner’s Guide | by PrajnaAI | Medium</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters generally agree with the premise, noting the analogy to open source and the progression from large datacenters to local hardware. Some express concern that entrenched interests will resist, while others point out that users often complain about local AI being too large (e.g., Chrome's local LLM).
+**Discussion**: Comments highlight a range of viewpoints: some see local AI as inevitable, comparing it to the open-source journey; others note current performance gaps and user choice. A minority worry about potential privacy issues with browser-based local models, illustrating the 'damned if you do, damned if you don't' dilemma.
 
-**Tags**: `#local AI`, `#open source`, `#AI infrastructure`, `#privacy`, `#community debate`
+**Tags**: `#local AI`, `#open source`, `#AI decentralization`, `#software engineering`, `#community discussion`
 
 ---
 
 <a id="item-3"></a>
-## [Fictional Incident Report Sparks Real Supply Chain Security Debate](https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html) ⭐️ 8.0/10
+## [Fictional Rust Supply-Chain Attack Report Sparks Security Debate](https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html) ⭐️ 8.0/10
 
-A fictional yet highly realistic incident report titled 'Incident Report: CVE-2024-YIKES' was published, detailing a supply chain attack through a compromised Rust library, sparking community discussion on security practices and agentic development risks. This report highlights the growing threat of supply chain vulnerabilities in open-source ecosystems, particularly through transitive dependencies, and raises concerns about new risks introduced by agentic AI development. It serves as a timely reminder for the security community to prioritize supply chain security. The scenario involves a compromised Rust library 'vulpine-lz4' that becomes a transitive dependency of cargo, and the report includes realistic elements like a fake YubiKey purchase and a security team's backlogged headcount request. The library has only 12 GitHub stars but is widely depended on.
+A fictional but highly realistic incident report titled 'CVE-2024-YIKES' details a supply-chain attack on Rust's package registry crates.io, involving credential theft and malicious dependency insertion via typosquatting and dependency confusion. This report highlights critical vulnerabilities in modern package ecosystems, emphasizing how small, unmaintained dependencies can compromise major tools like Cargo. It serves as a wake-up call for developers and organizations to prioritize supply-chain security. The attack exploits typosquatting (e.g., 'vulpine-lz4' vs. 'lz4-sys') and dependency confusion to inject malicious code. It also satirizes real security issues like overlooked headcount requests and fake hardware tokens.
 
 hackernews · miniBill · May 10, 17:43 · [Discussion](https://news.ycombinator.com/item?id=48086082)
 
-**Background**: Supply chain security focuses on protecting software from tampering throughout its lifecycle, from development to deployment. The SLSA (Supply-chain Levels for Software Artifacts) framework provides a checklist to prevent such attacks. Agentic AI development introduces new risks because autonomous agents can make decisions without human oversight, potentially amplifying the impact of compromised dependencies.
+**Background**: Supply-chain attacks target the trust relationship between software components. Typosquatting involves publishing packages with names similar to popular ones, while dependency confusion tricks package managers into downloading malicious packages from public registries instead of private ones. Rust's crate ecosystem is particularly vulnerable due to its extensive dependency tree.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://slsa.dev/">SLSA • Supply-chain Levels for Software Artifacts</a></li>
-<li><a href="https://www.blackduck.com/resources/analyst-reports/open-source-security-risk-analysis.html">2026 OSSRA Report: Open Source Security & Risk Analysis</a></li>
-<li><a href="https://www.grammarly.com/agentic-ai">What is Agentic AI? | Agentic AI 101</a></li>
+<li><a href="https://markaicode.com/rust-crate-supply-chain-security/">Why 90% of Rust Crates Have Supply Chain Risks—and How to ...</a></li>
+<li><a href="https://www.aquasec.com/cloud-native-academy/supply-chain-security/dependency-confusion/">What Is a Dependency Confusion Attack? - aquasec.com</a></li>
+<li><a href="https://snyk.io/blog/typosquatting-attacks/">Typosquatting attacks | Snyk Blog | Snyk</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments praised the report as high-quality fiction that raised real concerns, with users noting it felt realistic and sparked thoughtful discussion. One user listed actual Rust crates that could be targeted, while another expressed concern about agentic development creating new security problems.
+**Discussion**: The community praised the report's realism and humor, with users noting how it accurately depicted supply-chain attack vectors. Some commenters discussed specific crates that could be compromised, while others expressed concern about the new era of agentic development adding more security risks.
 
-**Tags**: `#supply chain security`, `#incident response`, `#open source`, `#software security`, `#fiction`
+**Tags**: `#supply-chain security`, `#cybersecurity`, `#fictional incident`, `#package management`, `#Rust`
 
 ---
 
 <a id="item-4"></a>
-## [Rossmann Offers Legal Fees for Threatened OrcaSlicer Dev](https://www.tomshardware.com/3d-printing/louis-rossmann-tells-3d-printer-maker-bambu-lab-to-go-bleep-yourself-over-its-lawsuit-against-enthusiast-right-to-repair-advocate-offers-to-pay-the-legal-fees-for-a-threatened-orcaslicer-developer) ⭐️ 8.0/10
+## [Louis Rossmann offers to pay legal fees for threatened OrcaSlicer developer](https://www.tomshardware.com/3d-printing/louis-rossmann-tells-3d-printer-maker-bambu-lab-to-go-bleep-yourself-over-its-lawsuit-against-enthusiast-right-to-repair-advocate-offers-to-pay-the-legal-fees-for-a-threatened-orcaslicer-developer) ⭐️ 8.0/10
 
-Louis Rossmann, a prominent right-to-repair advocate, publicly offered to cover the legal fees for an OrcaSlicer developer threatened by Bambu Lab's lawsuit against third-party software. This highlights growing tensions between 3D printer manufacturers and the open-source community over right-to-repair and device ownership, potentially setting a precedent for how companies enforce software restrictions. Bambu Lab previously faced backlash for attempting to block offline access to its printers, and now it is involved in a lawsuit that threatens developers of OrcaSlicer—an open-source slicing software that supports Bambu printers.
+Louis Rossmann, a prominent right-to-repair advocate, has publicly offered to cover the legal fees for an OrcaSlicer developer who was threatened with a lawsuit by Bambu Lab, a 3D printer manufacturer. This case highlights the growing tension between open-source software developers and corporate legal threats, and it could set a precedent for how right-to-repair advocates support the open-source community against aggressive litigation. Bambu Lab allegedly threatened the developer over a fork of OrcaSlicer, an open-source slicer software, which supports Bambu printers. Rossmann's offer includes covering all legal costs if Bambu Lab proceeds with the lawsuit.
 
 hackernews · iancmceachern · May 10, 14:47 · [Discussion](https://news.ycombinator.com/item?id=48084432)
 
-**Background**: OrcaSlicer is a popular open-source G-code generator for 3D printers, offering advanced features beyond the default Bambu Studio. Bambu Lab's lawsuit, reportedly related to patent or software restrictions, has alarmed the open-source community. Right-to-repair advocates argue that users should have full control over devices they purchase, including the ability to use third-party software without legal threats.
+**Background**: OrcaSlicer is a free, open-source G-code generator for 3D printing, used to convert 3D models into instructions for printers. Bambu Lab, a company founded by former DJI engineers, makes popular high-end 3D printers. The dispute revolves around a community fork of OrcaSlicer that may have included features or code that Bambu Lab claims infringes its rights.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.orcaslicer.com/">OrcaSlicer — Official Website & Downloads (Orca Slicer)</a></li>
-<li><a href="https://3dprintingindustry.com/news/stratasys-vs-bambu-lab-lawsuit-charges-against-defendants-dropped-233325/">Stratasys vs Bambu Lab Lawsuit: Charges... - 3D Printing Industry</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bambu_Lab">Bambu Lab - Wikipedia</a></li>
+<li><a href="https://github.com/OrcaSlicer/orcaslicer">GitHub - OrcaSlicer/OrcaSlicer: G-code generator for 3D ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Many commenters expressed anger at Bambu Lab's actions, with one user vowing to keep their X1C offline and isolated. Others praised Louis Rossmann's willingness to fund legal defense, while noting that Bambu Lab's trust has been eroded. Some debated the specifics of the lawsuit and OrcaSlicer forks.
+**Discussion**: Community comments show strong support for Rossmann and criticism of Bambu Lab. Users like jchw and ChristianJacobs express frustration with Bambu Lab's practices, with some advocating for offline use or switching brands. Others, like dekhn, share alternative printer choices. There is general agreement that Rossmann's action is commendable.
 
-**Tags**: `#right-to-repair`, `#3D printing`, `#open-source`, `#legal`, `#Bambu Lab`
+**Tags**: `#3D printing`, `#right-to-repair`, `#open source`, `#legal threats`, `#community`
 
 ---
 
 <a id="item-5"></a>
-## [Space Cadet Pinball Revived on Linux via Reverse Engineering](https://brennan.io/2026/05/09/pinball-and-escrow/) ⭐️ 8.0/10
+## [Space Cadet Pinball Ported to Linux via Decompilation](https://brennan.io/2026/05/09/pinball-and-escrow/) ⭐️ 8.0/10
 
-A developer has successfully reverse-engineered the classic Space Cadet Pinball game from its original Windows executable, creating a fully playable native Linux port without access to the original source code. This achievement preserves a beloved piece of computing history and makes the game accessible on modern Linux systems, highlighting the importance of reverse engineering for software preservation. The recreation was done solely by decompiling the Windows 32-bit executable, without any original source code, and the project is open-source on GitHub with contributions enabling ports to multiple consoles and a browser version.
+A faithful recreation of Space Cadet Pinball for Linux has been achieved through decompilation of the original Windows executable, without access to the source code. This project demonstrates the power of reverse engineering for game preservation and has been celebrated by the original authors, highlighting the cultural significance of the game. The decompilation was performed blind without looking at the original source code, and the resulting code has been ported to multiple consoles and even a browser version.
 
 hackernews · jandeboevrie · May 10, 11:22 · [Discussion](https://news.ycombinator.com/item?id=48082968)
 
-**Background**: Space Cadet Pinball was originally bundled with Windows 95 and later versions, becoming one of the most recognizable casual games of the era. It was one of three tables in Full Tilt! Pinball, developed by Cinematronics and published by Maxis in 1995. Reverse engineering a compiled executable into readable C code is a complex, manual process that often requires deep understanding of assembly and game logic.
+**Background**: Decompilation is the process of translating executable binaries back into high-level source code, a challenging task due to information loss during compilation. This project joins a growing list of game decompilations that enable preservation and porting of classic titles.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Full_Tilt!_Pinball">Full Tilt! Pinball - Wikipedia</a></li>
-<li><a href="https://github.com/k4zmu2a/SpaceCadetPinball">GitHub - k4zmu2a/SpaceCadetPinball: Decompilation of 3D Pinball for...</a></li>
-<li><a href="https://store.kde.org/p/1855605/">Space Cadet Pinball - KDE Store</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Decompilation">Decompilation</a></li>
+<li><a href="https://github.com/CharlotteCross1998/awesome-game-decompilations">GitHub - CharlotteCross1998/awesome-game-decompilations...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: One of the original authors of Space Cadet Pinball expressed joy and gratitude for the preservation effort, forwarding the post to co-founders. Other commenters noted the recreation's striking accuracy and pointed out that the game has been ported to many platforms, including a browser version.
+**Discussion**: The original author expressed joy and forwarded the post to co-founders, while commenters praised the recreation's accuracy and noted additional console and browser ports.
 
-**Tags**: `#reverse engineering`, `#gaming`, `#Linux`, `#open source`, `#preservation`
+**Tags**: `#retro gaming`, `#Linux`, `#reverse engineering`, `#game preservation`, `#open source`
 
 ---
 
 <a id="item-6"></a>
-## [xAI's Grok Build tool leaks; plans 10 trillion parameter model](https://tech.ifeng.com/c/8t0yrbeeuwt) ⭐️ 8.0/10
+## [Leaked Grok Build Shows xAI's Ambitious Coding AI Plans](https://tech.ifeng.com/c/8t0yrbeeuwt) ⭐️ 8.0/10
 
-xAI's desktop tool Grok Build has been leaked, revealing it as a cross-platform agent workflow application that can autonomously execute multi-step development tasks, defaulting to Grok 4.3 Early Access. The leak also indicates xAI is training massive models with up to 10 trillion parameters, including a 6 trillion parameter version to rival Claude Code's Opus level. If released, Grok Build could directly compete with Anthropic's Claude Code, becoming a major player in AI-powered coding tools. The planned 10 trillion parameter models suggest xAI is pushing the boundaries of model scale, which could significantly advance AI coding capabilities and impact developers and the AI industry. Grok Build supports macOS, Linux, and Windows, opens local file and Git permissions, and integrates MCP, official skills, and plugins. The leaked page lists model sizes of 1, 1.5, 6, and 10 trillion parameters, plus an image/video model called Imagine V2.
+xAI's Grok Build desktop app, an agentic coding tool with up to 8 concurrent AI agents, was accidentally leaked online, revealing support for MCP, local files, Git, and plugins. The leak also disclosed xAI is training large models up to 10 trillion parameters to compete with Claude Code. This positions xAI as a serious contender in the AI coding tool market, potentially challenging Anthropic's Claude Code and OpenAI's Codex. The 10 trillion parameter model scale suggests xAI is pushing the boundaries of AI capabilities for software development. Grok Build defaults to Grok 4.3 Early Access and spawns multiple agents for parallel planning and execution, an architecture distinct from single-agent tools. The leaked models include 1T, 1.5T, 6T, and 10T parameter variants, plus an Imagine V2 image/video model, with Opus-level competition requiring at least 6T parameters.
 
 telegram · zaihuapd · May 10, 13:34
 
-**Background**: Grok Build is an AI-powered coding agent similar to Anthropic's Claude Code, which can autonomously understand codebases, edit files, and run commands. MCP (Model Context Protocol) is a protocol for AI models to interact with external tools, akin to function calling. xAI, founded by Elon Musk, aims to build advanced AI models to compete with OpenAI and others.
+**Background**: Agentic coding tools like Claude Code automate multi-step software development tasks by using AI agents that can access files, execute commands, and manage Git. The Model Context Protocol (MCP) is an open standard for connecting AI applications to external systems, enabling integrations with data sources and tools. Parameter count (e.g., 1 trillion) indicates model capacity; larger models generally achieve better performance but require more compute.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://tech.ifeng.com/c/8t0yrbeeuwt">马斯克大招来了：Grok Build编程智能体泄露 对标Cluade Code_凤凰网</a></li>
-<li><a href="https://www.downly.cn/articles/008354f6-22b4-4f5f-88d5-53806d2209ce">马斯克布局氛围式编程 xAI新工具Grok Build曝光 | Downly - AI应用平台</a></li>
-<li><a href="https://post.smzdm.com/p/a82vop4l/">马斯克大招来了：Grok Build编程智能体泄露 对标Cluade Code...</a></li>
+<li><a href="https://rywalker.com/research/grok-build">Grok Build (xAI) | Ry Walker Research</a></li>
+<li><a href="https://docs.x.ai/overview">Overview | xAI Docs</a></li>
+<li><a href="https://www.testingcatalog.com/spacexai-prepares-grok-build-desktop-app-to-rival-openai-codex/">SpaceXAI prepares Grok Build desktop app for release</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Model_Context_Protocol">Model Context Protocol - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#xAI`, `#Grok Build`, `#coding tools`, `#AI models`, `#Claude Code`
+**Tags**: `#AI coding tools`, `#xAI`, `#Grok Build`, `#Claude Code`, `#large language models`
+
+---
+
+<a id="item-7"></a>
+## [AI Coding Tools and Task Paralysis](https://g5t.de/articles/20260510-task-paralysis-and-ai/index.html) ⭐️ 7.0/10
+
+A developer's personal reflection describes how AI coding tools like Claude Code contribute to task paralysis, reducing the joy of deep programming work and creating addiction-like behaviors. This highlights a psychological downside of AI-assisted coding, potentially affecting developer well-being and long-term productivity. It sparks important debate about the trade-offs of AI in software engineering. The author describes experiencing ADHD-like symptoms and addiction to AI tools, while community members report losing engagement with lower-level technical challenges and feeling like mere managers of AI agents.
+
+hackernews · MrGilbert · May 10, 06:20 · [Discussion](https://news.ycombinator.com/item?id=48081469)
+
+**Background**: Task paralysis is a psychological freeze response to anxiety, often affecting neurodivergent individuals more severely. Deep work, a concept by Cal Newport, refers to distraction-free focused work that produces high-quality results. The reflection suggests that AI tools, by lowering the barrier to start tasks, may inadvertently undermine the deep focus that makes programming rewarding.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://drjud.com/procrastination/task-paralysis/">Task Paralysis: Why Your Brain Freezes and How to Fix It</a></li>
+<li><a href="https://asana.com/resources/what-is-deep-work">Deep work: Meaning, benefits, and 7 ways to focus today</a></li>
+<li><a href="https://www.todoist.com/inspiration/deep-work">Deep Work: The Complete Guide (Inc. a Step-by-Step Checklist)</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Many developers in the comments strongly relate to the experience, expressing that AI has killed their joy for programming and transformed their role from technical problem-solver to agent manager. Some note an addictive spiral of increasing usage and diminishing satisfaction, while others acknowledge initial productivity gains but later disillusionment.
+
+**Tags**: `#AI`, `#Developer Experience`, `#Mental Health`, `#Software Engineering`, `#Productivity`
+
+---
+
+<a id="item-8"></a>
+## [Report Exposes Chinese Grey Market for Claude API with Data Theft](https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-grey-market-sells-claude-api-access-at-90-percent-off-through-proxy-networks-that-harvest-user-data) ⭐️ 7.0/10
+
+A report reveals that Chinese grey market services resell Anthropic's Claude API access at up to 90% off official prices, using methods like stolen credit cards, batch account registration, and model swapping, while also harvesting user data for model distillation. This undermines trust in AI API services, exposes users to data theft and inferior model quality, and highlights significant security and ethical risks in the AI ecosystem. It also threatens the revenue and integrity of official API providers like Anthropic. Resellers often swap premium models like Claude Opus with cheaper or domestic Chinese models, and collect user prompts and outputs (especially code) for model distillation. The report also mentions recruiting people in low-income countries to pass real-name authentication to bypass official checks.
+
+telegram · zaihuapd · May 10, 01:48
+
+**Background**: Model distillation is a technique where knowledge from a large, expensive model is transferred to a smaller, cheaper one, often used to reduce costs. In the AI grey market, service providers known as 'transit stations' act as API proxies, aggregating access from multiple sources and reselling it with markups or discounts. These practices are common in regions with restricted access to certain AI services, creating security vulnerabilities.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Model_distillation">Model distillation</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Claude API`, `#grey market`, `#data security`, `#AI ethics`, `#China`
 
 ---

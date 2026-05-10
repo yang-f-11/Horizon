@@ -5,156 +5,202 @@ date: 2026-05-10
 lang: zh
 ---
 
-> From 19 items, 6 important content pieces were selected
+> From 19 items, 8 important content pieces were selected
 
 ---
 
-1. [硬件认证成为垄断工具](#item-1) ⭐️ 8.0/10
-2. [本地 AI 应成为常态](#item-2) ⭐️ 8.0/10
-3. [虚构安全事件报告引发真实供应链安全讨论](#item-3) ⭐️ 8.0/10
-4. [Rossmann 为受威胁的 OrcaSlicer 开发者提供法律费用](#item-4) ⭐️ 8.0/10
-5. [通过逆向工程，太空军校生弹球在 Linux 上重生](#item-5) ⭐️ 8.0/10
-6. [xAI 的 Grok Build 工具泄露，计划训练 10 万亿参数模型](#item-6) ⭐️ 8.0/10
+1. [硬件认证将欧盟数字身份绑定到美国双头垄断](#item-1) ⭐️ 8.0/10
+2. [让本地 AI 成为常态](#item-2) ⭐️ 8.0/10
+3. [虚构的 Rust 供应链攻击报告引发安全讨论](#item-3) ⭐️ 8.0/10
+4. [罗斯曼愿为受威胁的 OrcaSlicer 开发者支付律师费](#item-4) ⭐️ 8.0/10
+5. [通过反编译将太空军校生弹球移植到 Linux](#item-5) ⭐️ 8.0/10
+6. [泄露的 Grok Build 显示 xAI 雄心勃勃的编程 AI 计划](#item-6) ⭐️ 8.0/10
+7. [AI 编码工具与任务瘫痪](#item-7) ⭐️ 7.0/10
+8. [报告揭露中国 Claude API 灰色市场存在数据窃取与模型掉包](#item-8) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [硬件认证成为垄断工具](https://grapheneos.social/@GrapheneOS/116550899908879585) ⭐️ 8.0/10
+## [硬件认证将欧盟数字身份绑定到美国双头垄断](https://grapheneos.social/@GrapheneOS/116550899908879585) ⭐️ 8.0/10
 
-欧盟数字身份钱包要求使用谷歌或苹果的硬件认证，这意味着用户必须拥有这两家美国公司批准的设备才能使用其数字身份。 这将欧盟数字身份与美国的双头垄断捆绑，削弱了数字主权，并将开源或替代操作系统排除在外，对隐私和竞争可能产生重大影响。 认证依赖于硬件绑定的密钥和证书，批评者指出它没有使用零知识证明或盲签名，这意味着每个认证数据包都可以将用户设备与其行为关联起来。
+欧盟数字身份钱包（EUDI）要求使用谷歌或苹果的硬件认证，实际上将欧洲数字身份与美国科技双头垄断捆绑在一起，引发了严重的主权和隐私担忧。 这一要求通过将公民锁定在专有生态系统中，削弱了数字主权和用户隐私。由于缺乏零知识证明，认证数据包可将行为与特定设备关联，从而可能实现追踪和监控。 认证过程使用静态设备 ID 获取临时 ID，从而允许随时间关联行为。即使对于强完整性级别，也存在物理绕过技术，例如 DRAM 比特翻转攻击。
 
 hackernews · ChuckMcM · May 10, 17:54 · [社区讨论](https://news.ycombinator.com/item?id=48086190)
 
-**背景**: 硬件认证是一种安全机制，设备通过存储在安全元件中的制造商证书来证明其身份和完整性。欧盟数字身份钱包依据 (EU) 2024/1183 法规设立，旨在为成员国提供通用的数字身份。批评者将其比作早年的争议，如 1999 年英特尔的 CPU 序列号事件以及对 TPM 的推动。
+**背景**: 硬件认证是一种安全机制，通过抗篡改硬件（如可信平台模块 TPM 或谷歌、苹果等制造商提供的安全飞地）验证设备的完整性。欧盟数字身份钱包（EUDI）旨在统一各成员国的数字身份标准，但其对专有认证的依赖与开放性和自主主权身份原则相冲突。这一争议让人联想到 1999 年对英特尔处理器序列号的强烈反对以及围绕可信计算的持续辩论。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/EU_Digital_Identity_Wallet">EU Digital Identity Wallet - Wikipedia</a></li>
-<li><a href="https://source.android.com/docs/security/features/keystore/attestation">Key and ID attestation | Android Open Source Project</a></li>
-<li><a href="https://ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTITYWALLET/pages/694487738/EU+Digital+Identity+Wallet+Home">EU Digital Identity Wallet Home - EU Digital Identity Wallet -</a></li>
+<li><a href="https://developer.android.com/privacy-and-security/security-key-attestation">Verify hardware-backed key pairs with key attestation</a></li>
+<li><a href="https://sesamedisk.com/hardware-attestation-monopoly-2026/">Hardware Attestation as Monopoly Enabler: How 2026’s Security ...</a></li>
+<li><a href="https://www.biometricupdate.com/202502/eudi-wallet-sees-progress-but-also-criticism">EUDI Wallet sees progress but also criticism | Biometric Update</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者强烈表达了隐私和垄断方面的担忧，指出将身份与谷歌或苹果硬件绑定削弱了数字主权。有人指出缺乏零知识技术，可能导致追踪，而其他人则将其与当年反对英特尔 CPU 序列号的历史相提并论。
+**社区讨论**: 评论者批评缺乏零知识证明等隐私保护功能，指出静态设备 ID 可用于追踪用户。一些人指出了实际绕过技术，包括物理故障注入攻击，并认为这一要求重复了以往硬件序列号的错误。
 
-**标签**: `#hardware attestation`, `#EU digital identity`, `#monopoly`, `#privacy`, `#security`
+**标签**: `#hardware attestation`, `#digital identity`, `#privacy`, `#monopoly`, `#EUDI wallet`
 
 ---
 
 <a id="item-2"></a>
-## [本地 AI 应成为常态](https://unix.foo/posts/local-ai-needs-to-be-norm/) ⭐️ 8.0/10
+## [让本地 AI 成为常态](https://unix.foo/posts/local-ai-needs-to-be-norm/) ⭐️ 8.0/10
 
-一篇博客文章主张，本地 AI 应成为标准，以减少对集中式提供商的依赖，并直接类比开源运动。 这很重要，因为对 OpenAI 和 Anthropic 等集中式 AI 提供商的过度依赖会导致隐私风险和供应商锁定，类似于开源在软件领域解决的问题。 本地 AI 模型在消费级硬件上已可行，例如 Chrome 内置的 Prompt API 使用设备端 LLM，仅占用几 GB 空间。
+一篇博客文章主张本地 AI 应成为常态，将其与开源运动相类比，并批评了对 OpenAI 和 Anthropic 等远程 API AI 模型的过度依赖。 这一转变可以减少对集中式 AI 提供商的依赖，改善数据隐私，并通过让任何人能在本地运行强大模型来促进创新。它挑战了当前仅限云端 AI 的行业趋势。 作者明确将早期对开源软件的抵制与当前对本地 AI 的怀疑相类比。社区评论指出，虽然远程模型目前性能优于本地模型，但硬件进步（例如 128GB VRAM 笔记本电脑）正在迅速缩小差距。
 
 hackernews · cylo · May 10, 17:19 · [社区讨论](https://news.ycombinator.com/item?id=48085821)
 
-**背景**: 本地 AI 是指 AI 模型在用户自己的设备上运行，而非远程服务器。基于云的 AI 更强大，但引发了隐私和依赖问题。该论点类比了早期开源软件，当时专有解决方案占主导，但最终让位于社区驱动的替代品。
+**背景**: 本地 AI 是指在用户设备上直接运行 AI 模型，而非将数据发送到云服务器。LocalAI 等工具提供兼容 OpenAI 的 API 用于本地推理。开源运动同样从专有软件转向社区驱动的替代方案，作者认为这是本地 AI 采纳的模板。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://surfiai.com/how-to-run-ai-locally-without-the-headache/">How to Run AI Locally Without the Headache – SurfiAI – AI-Powered...</a></li>
-<li><a href="https://appflowy.com/blog/5-Shocking-Local-AI-Secrets-Big-Tech-Doesn't-Want-You-to-Know">5 Shocking Local AI Secrets Big Tech Doesn't Want You to Know</a></li>
-<li><a href="https://grokipedia.com/page/Local_AI_vs_cloud_AI">Local AI vs. cloud AI</a></li>
+<li><a href="https://localai.io/">LocalAI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Distributed_artificial_intelligence">Distributed artificial intelligence - Wikipedia</a></li>
+<li><a href="https://prajnaaiwisdom.medium.com/what-is-local-llm-inference-a-beginners-guide-b31043768d4f">What Is Local LLM Inference? A Beginner’s Guide | by PrajnaAI | Medium</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者普遍赞同该论点，注意到与开源的类比以及从大型数据中心到本地硬件的发展趋势。一些人担心既得利益者会抵制，另一些人则指出用户常抱怨本地 AI 体积过大（例如 Chrome 的本地 LLM）。
+**社区讨论**: 评论呈现了多种观点：有人认为本地 AI 不可避免，将其比作开源历程；其他人则指出当前性能差距和用户选择。少数人担忧基于浏览器的本地模型的隐私问题，体现了‘做也是错，不做也是错’的两难困境。
 
-**标签**: `#local AI`, `#open source`, `#AI infrastructure`, `#privacy`, `#community debate`
+**标签**: `#local AI`, `#open source`, `#AI decentralization`, `#software engineering`, `#community discussion`
 
 ---
 
 <a id="item-3"></a>
-## [虚构安全事件报告引发真实供应链安全讨论](https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html) ⭐️ 8.0/10
+## [虚构的 Rust 供应链攻击报告引发安全讨论](https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html) ⭐️ 8.0/10
 
-一篇题为《事件报告：CVE-2024-YIKES》的虚构但高度真实的事件报告发布，详细描述了一次通过被入侵的 Rust 库发起的供应链攻击，引发了社区关于安全实践和智能体开发风险的讨论。 这份报告凸显了开源生态系统中供应链漏洞日益增长的威胁，特别是通过传递依赖关系，并引发了对智能体 AI 开发带来新风险的担忧。它及时提醒安全社区应优先考虑供应链安全。 该情景涉及一个被入侵的 Rust 库“vulpine-lz4”，它成为 cargo 的传递依赖，报告包含诸如假 YubiKey 购买和安全团队积压的人员需求等真实元素。该库在 GitHub 上只有 12 颗星，但被广泛依赖。
+一份名为‘CVE-2024-YIKES’的虚构但高度真实的 incident 报告详细描述了针对 Rust 包注册表 crates.io 的供应链攻击，涉及凭据窃取以及通过域名仿冒和依赖混淆插入恶意依赖项。 这份报告突出了现代包生态系统中的关键漏洞，强调了小型、未维护的依赖项如何能够损害像 Cargo 这样的主要工具。它为开发者和组织敲响了警钟，需优先考虑供应链安全。 该攻击利用域名仿冒（例如‘vulpine-lz4’与‘lz4-sys’）和依赖混淆来注入恶意代码。它还讽刺了真实存在的安全问题，例如被忽视的人力需求申请和伪造的硬件令牌。
 
 hackernews · miniBill · May 10, 17:43 · [社区讨论](https://news.ycombinator.com/item?id=48086082)
 
-**背景**: 供应链安全关注保护软件在整个生命周期（从开发到部署）免受篡改。SLSA（软件制品供应链级别）框架提供了防止此类攻击的检查清单。智能体 AI 开发引入了新风险，因为自主代理可以在无人监督的情况下做出决策，可能放大被入侵依赖关系的影响。
+**背景**: 供应链攻击针对软件组件之间的信任关系。域名仿冒涉及发布与流行包名称相似的包，而依赖混淆则欺骗包管理器从公共注册表而非私有注册表下载恶意包。Rust 的 crate 生态系统因其广泛的依赖树而特别脆弱。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://slsa.dev/">SLSA • Supply-chain Levels for Software Artifacts</a></li>
-<li><a href="https://www.blackduck.com/resources/analyst-reports/open-source-security-risk-analysis.html">2026 OSSRA Report: Open Source Security & Risk Analysis</a></li>
-<li><a href="https://www.grammarly.com/agentic-ai">What is Agentic AI? | Agentic AI 101</a></li>
+<li><a href="https://markaicode.com/rust-crate-supply-chain-security/">Why 90% of Rust Crates Have Supply Chain Risks—and How to ...</a></li>
+<li><a href="https://www.aquasec.com/cloud-native-academy/supply-chain-security/dependency-confusion/">What Is a Dependency Confusion Attack? - aquasec.com</a></li>
+<li><a href="https://snyk.io/blog/typosquatting-attacks/">Typosquatting attacks | Snyk Blog | Snyk</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论称赞这份报告是引发真实担忧的高质量虚构作品，用户指出它感觉真实并引发了深思熟虑的讨论。一位用户列出了实际可能被攻击的 Rust crate，另一位则表达了对智能体开发带来新安全问题的担忧。
+**社区讨论**: 社区称赞该报告的现实性和幽默感，用户指出它准确描绘了供应链攻击向量。一些评论者讨论了可能被攻陷的具体 crate，而另一些人则对新增代理式开发带来更多安全风险表示担忧。
 
-**标签**: `#supply chain security`, `#incident response`, `#open source`, `#software security`, `#fiction`
+**标签**: `#supply-chain security`, `#cybersecurity`, `#fictional incident`, `#package management`, `#Rust`
 
 ---
 
 <a id="item-4"></a>
-## [Rossmann 为受威胁的 OrcaSlicer 开发者提供法律费用](https://www.tomshardware.com/3d-printing/louis-rossmann-tells-3d-printer-maker-bambu-lab-to-go-bleep-yourself-over-its-lawsuit-against-enthusiast-right-to-repair-advocate-offers-to-pay-the-legal-fees-for-a-threatened-orcaslicer-developer) ⭐️ 8.0/10
+## [罗斯曼愿为受威胁的 OrcaSlicer 开发者支付律师费](https://www.tomshardware.com/3d-printing/louis-rossmann-tells-3d-printer-maker-bambu-lab-to-go-bleep-yourself-over-its-lawsuit-against-enthusiast-right-to-repair-advocate-offers-to-pay-the-legal-fees-for-a-threatened-orcaslicer-developer) ⭐️ 8.0/10
 
-知名维修权倡导者 Louis Rossmann 公开表示，愿意为受到 Bambu Lab 诉讼威胁的 OrcaSlicer 开发者支付法律费用。 此事件凸显了 3D 打印机制造商与开源社区之间在维修权和设备所有权问题上的日益紧张，可能为企业如何执行软件限制开创先例。 Bambu Lab 曾因试图阻止离线访问其打印机而遭到强烈反对，如今又卷入一场威胁 OrcaSlicer（一款支持 Bambu 打印机的开源切片软件）开发者的诉讼。
+知名维修权倡导者路易斯·罗斯曼公开表示，愿意为一名受到 Bambu Lab（一家 3D 打印机制造商）诉讼威胁的 OrcaSlicer 开发者支付法律费用。 此案突显了开源软件开发者与企业法律威胁之间日益紧张的关系，并可能为维修权倡导者如何支持开源社区对抗激进诉讼树立先例。 Bambu Lab 据称因一款支持其打印机的 OrcaSlicer 分支软件而威胁开发者。罗斯曼的承诺包括如果 Bambu Lab 提起诉讼，他将承担所有法律费用。
 
 hackernews · iancmceachern · May 10, 14:47 · [社区讨论](https://news.ycombinator.com/item?id=48084432)
 
-**背景**: OrcaSlicer 是一款流行的开源 3D 打印机 G-code 生成器，提供了超越默认 Bambu Studio 的高级功能。Bambu Lab 的诉讼据报道涉及专利或软件限制，引起了开源社区的警觉。维修权倡导者认为，用户应完全控制其购买的设备，包括使用第三方软件而不受法律威胁的权利。
+**背景**: OrcaSlicer 是一款免费开源的 3D 打印 G 代码生成器，用于将 3D 模型转换为打印机指令。Bambu Lab 由前大疆工程师创立，生产常见的高端 3D 打印机。争议围绕 OrcaSlicer 的一个社区分支展开，该分支可能包含 Bambu Lab 声称侵犯其权益的功能或代码。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.orcaslicer.com/">OrcaSlicer — Official Website & Downloads (Orca Slicer)</a></li>
-<li><a href="https://3dprintingindustry.com/news/stratasys-vs-bambu-lab-lawsuit-charges-against-defendants-dropped-233325/">Stratasys vs Bambu Lab Lawsuit: Charges... - 3D Printing Industry</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bambu_Lab">Bambu Lab - Wikipedia</a></li>
+<li><a href="https://github.com/OrcaSlicer/orcaslicer">GitHub - OrcaSlicer/OrcaSlicer: G-code generator for 3D ...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 许多评论者对 Bambu Lab 的行为表示愤怒，一位用户誓言将其 X1C 打印机保持离线并隔离。其他人称赞 Louis Rossmann 愿意资助法律辩护，同时指出 Bambu Lab 的信誉已受损。部分讨论涉及诉讼细节及 OrcaSlicer 的分支版本。
+**社区讨论**: 社区评论显示对罗斯曼的强烈支持和对 Bambu Lab 的批评。用户 jchw 和 ChristianJacobs 对 Bambu Lab 的做法表示不满，有人主张离线使用或更换品牌。另一位用户 dekhn 分享了替代打印机选择。大家普遍认为罗斯曼的行为值得称赞。
 
-**标签**: `#right-to-repair`, `#3D printing`, `#open-source`, `#legal`, `#Bambu Lab`
+**标签**: `#3D printing`, `#right-to-repair`, `#open source`, `#legal threats`, `#community`
 
 ---
 
 <a id="item-5"></a>
-## [通过逆向工程，太空军校生弹球在 Linux 上重生](https://brennan.io/2026/05/09/pinball-and-escrow/) ⭐️ 8.0/10
+## [通过反编译将太空军校生弹球移植到 Linux](https://brennan.io/2026/05/09/pinball-and-escrow/) ⭐️ 8.0/10
 
-一位开发者成功地对经典游戏《太空军校生弹球》的原始 Windows 可执行文件进行了逆向工程，创建了一个完全可玩的原生 Linux 移植版，且无需访问原始源代码。 这一成就保护了一段珍贵的计算历史，并使该游戏在现代 Linux 系统上可玩，突显了逆向工程在软件保存中的重要性。 该复刻仅通过反编译 Windows 32 位可执行文件完成，没有使用任何原始源代码，该项目在 GitHub 上开源，贡献者还将其移植到多个游戏主机并制作了浏览器版本。
+通过反编译原始 Windows 可执行文件（无需源代码），成功在 Linux 上忠实地还原了太空军校生弹球游戏。 该项目展示了逆向工程在游戏保存中的威力，并得到了原作者的赞赏，突显了该游戏的文化意义。 反编译过程完全盲进行，未参考原始源代码，生成的代码已移植到多个游戏机甚至浏览器版本。
 
 hackernews · jandeboevrie · May 10, 11:22 · [社区讨论](https://news.ycombinator.com/item?id=48082968)
 
-**背景**: 《太空军校生弹球》最初随 Windows 95 及后续版本捆绑，成为那个时代最知名的休闲游戏之一。它是《Full Tilt! Pinball》中的三张桌台之一，由 Cinematronics 开发、Maxis 于 1995 年发行。将编译后的可执行文件逆向工程为可读的 C 代码是一个复杂的手动过程，通常需要对汇编和游戏逻辑有深刻理解。
+**背景**: 反编译是将可执行二进制文件转换回高级源代码的过程，由于编译过程中的信息丢失，这是一项具有挑战性的任务。该项目加入了日益增多的游戏反编译列表，使得经典游戏的保存和移植成为可能。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Full_Tilt!_Pinball">Full Tilt! Pinball - Wikipedia</a></li>
-<li><a href="https://github.com/k4zmu2a/SpaceCadetPinball">GitHub - k4zmu2a/SpaceCadetPinball: Decompilation of 3D Pinball for...</a></li>
-<li><a href="https://store.kde.org/p/1855605/">Space Cadet Pinball - KDE Store</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Decompilation">Decompilation</a></li>
+<li><a href="https://github.com/CharlotteCross1998/awesome-game-decompilations">GitHub - CharlotteCross1998/awesome-game-decompilations...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 《太空军校生弹球》的原作者之一对保存工作表达了喜悦和感激，并将帖子转发给了联合创始人。其他评论者称赞复刻版惊人的准确性，并指出该游戏已被移植到多个平台，包括一个浏览器版本。
+**社区讨论**: 原作者表达了喜悦之情，并将帖子转发给联合创始人；评论者对还原的准确性表示赞赏，并提到了额外的游戏机和浏览器移植。
 
-**标签**: `#reverse engineering`, `#gaming`, `#Linux`, `#open source`, `#preservation`
+**标签**: `#retro gaming`, `#Linux`, `#reverse engineering`, `#game preservation`, `#open source`
 
 ---
 
 <a id="item-6"></a>
-## [xAI 的 Grok Build 工具泄露，计划训练 10 万亿参数模型](https://tech.ifeng.com/c/8t0yrbeeuwt) ⭐️ 8.0/10
+## [泄露的 Grok Build 显示 xAI 雄心勃勃的编程 AI 计划](https://tech.ifeng.com/c/8t0yrbeeuwt) ⭐️ 8.0/10
 
-xAI 的桌面工具 Grok Build 遭到泄露，显示它是一款跨平台的 Agent 工作流应用，可自主执行多步开发任务，默认搭载 Grok 4.3 Early Access。泄露还显示 xAI 正在训练高达 10 万亿参数的大规模模型，包括一个 6 万亿参数版本以对标 Claude Code 的 Opus 级别。 如果发布，Grok Build 将直接与 Anthropic 的 Claude Code 竞争，成为 AI 编程工具领域的主要玩家。计划中的 10 万亿参数模型表明 xAI 正在推动模型规模的极限，这可能显著提升 AI 编程能力，对开发者和 AI 行业产生重大影响。 Grok Build 支持 macOS、Linux 和 Windows，开放本地文件和 Git 权限，并集成了 MCP、官方技能和插件。泄露页面列出了 1 万亿、1.5 万亿、6 万亿和 10 万亿参数的模型规模，以及一个名为 Imagine V2 的图像/视频模型。
+xAI 的桌面应用 Grok Build 意外泄露，这是一款支持多达 8 个并发 AI 智能体的编程工具，具备 MCP 协议、本地文件、Git 和插件支持。同时泄露的信息显示 xAI 正在训练高达 10 万亿参数的大模型，以对标 Claude Code。 这将 xAI 定位为 AI 编程工具市场的有力竞争者，可能挑战 Anthropic 的 Claude Code 和 OpenAI 的 Codex。10 万亿参数的模型规模表明 xAI 正在突破软件开发 AI 的能力边界。 Grok Build 默认搭载 Grok 4.3 Early Access，能生成多个智能体进行并行规划和执行，该架构不同于单智能体工具。泄露的模型包括 1 万亿、1.5 万亿、6 万亿和 10 万亿参数版本，以及 Imagine V2 图像/视频模型，其中与 Opus 级别竞争至少需要 6 万亿参数。
 
 telegram · zaihuapd · May 10, 13:34
 
-**背景**: Grok Build 是一个 AI 驱动的编码代理，类似于 Anthropic 的 Claude Code，可以自主理解代码库、编辑文件并运行命令。MCP（模型上下文协议）是一种让 AI 模型与外部工具交互的协议，类似于函数调用。xAI 由埃隆·马斯克创立，旨在构建先进的 AI 模型与 OpenAI 等竞争。
+**背景**: Claude Code 等智能编程工具通过能够访问文件、执行命令和管理 Git 的 AI 智能体来自动化多步软件开发任务。模型上下文协议（MCP）是一个开放标准，用于将 AI 应用连接到外部系统，实现与数据源和工具的集成。参数量（如 1 万亿）表示模型容量；更大的模型通常性能更好，但需要更多计算资源。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://tech.ifeng.com/c/8t0yrbeeuwt">马斯克大招来了：Grok Build编程智能体泄露 对标Cluade Code_凤凰网</a></li>
-<li><a href="https://www.downly.cn/articles/008354f6-22b4-4f5f-88d5-53806d2209ce">马斯克布局氛围式编程 xAI新工具Grok Build曝光 | Downly - AI应用平台</a></li>
-<li><a href="https://post.smzdm.com/p/a82vop4l/">马斯克大招来了：Grok Build编程智能体泄露 对标Cluade Code...</a></li>
+<li><a href="https://rywalker.com/research/grok-build">Grok Build (xAI) | Ry Walker Research</a></li>
+<li><a href="https://docs.x.ai/overview">Overview | xAI Docs</a></li>
+<li><a href="https://www.testingcatalog.com/spacexai-prepares-grok-build-desktop-app-to-rival-openai-codex/">SpaceXAI prepares Grok Build desktop app for release</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Model_Context_Protocol">Model Context Protocol - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**标签**: `#xAI`, `#Grok Build`, `#coding tools`, `#AI models`, `#Claude Code`
+**标签**: `#AI coding tools`, `#xAI`, `#Grok Build`, `#Claude Code`, `#large language models`
+
+---
+
+<a id="item-7"></a>
+## [AI 编码工具与任务瘫痪](https://g5t.de/articles/20260510-task-paralysis-and-ai/index.html) ⭐️ 7.0/10
+
+一位开发者的个人反思描述了 AI 编码工具（如 Claude Code）如何导致任务瘫痪，减少深度编程工作的乐趣，并产生类似成瘾的行为。 这突显了 AI 辅助编码的心理负面影响，可能影响开发者的福祉和长期生产力。它引发了关于 AI 在软件工程中利弊权衡的重要讨论。 作者描述了类似 ADHD 的症状和对 AI 工具的上瘾，而社区成员报告称失去了对底层技术挑战的投入感，感觉只是 AI 代理的管理者。
+
+hackernews · MrGilbert · May 10, 06:20 · [社区讨论](https://news.ycombinator.com/item?id=48081469)
+
+**背景**: 任务瘫痪是一种对焦虑的心理冻结反应，通常对神经多样性个体影响更严重。深度工作是 Cal Newport 提出的概念，指不受干扰的专注工作，能产生高质量成果。该反思表明，AI 工具通过降低启动任务的门槛，可能无意中削弱了使编程有成就感的深度专注力。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://drjud.com/procrastination/task-paralysis/">Task Paralysis: Why Your Brain Freezes and How to Fix It</a></li>
+<li><a href="https://asana.com/resources/what-is-deep-work">Deep work: Meaning, benefits, and 7 ways to focus today</a></li>
+<li><a href="https://www.todoist.com/inspiration/deep-work">Deep Work: The Complete Guide (Inc. a Step-by-Step Checklist)</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 评论中的许多开发者强烈认同这种经历，表示 AI 扼杀了他们对编程的乐趣，并将其角色从技术问题解决者转变为代理管理者。一些人注意到使用量不断增加而满意度下降的成瘾螺旋，另一些人则承认最初的生产力提升但随后幻灭。
+
+**标签**: `#AI`, `#Developer Experience`, `#Mental Health`, `#Software Engineering`, `#Productivity`
+
+---
+
+<a id="item-8"></a>
+## [报告揭露中国 Claude API 灰色市场存在数据窃取与模型掉包](https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-grey-market-sells-claude-api-access-at-90-percent-off-through-proxy-networks-that-harvest-user-data) ⭐️ 7.0/10
+
+一份报告揭露，中国灰色市场服务以低至官方价格一折的水平转售 Anthropic 的 Claude API 访问权，手段包括盗刷信用卡、批量注册账号和模型掉包，同时采集用户数据用于模型蒸馏。 这破坏了用户对 AI API 服务的信任，使用户面临数据窃取和低质量模型的风险，并凸显了 AI 生态中重大的安全与伦理问题。同时，这也威胁了 Anthropic 等官方 API 提供商的收入和诚信。 转售商经常将 Claude Opus 等高级模型掉包为更便宜的模型或国产模型，并收集用户的提示词和输出（尤其是代码）用于模型蒸馏。报告还提到招募低收入国家人员代办实人认证以规避官方审查。
+
+telegram · zaihuapd · May 10, 01:48
+
+**背景**: 模型蒸馏是一种将大型昂贵模型的知识迁移到更小更便宜模型的技术，常用于降低成本。在 AI 灰色市场中，被称为“中转站”的服务提供商充当 API 代理，从多个来源聚合访问权限，并以加价或折扣的方式转售。这些做法在访问某些 AI 服务受限的地区很常见，造成了安全漏洞。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Model_distillation">Model distillation</a></li>
+
+</ul>
+</details>
+
+**标签**: `#Claude API`, `#grey market`, `#data security`, `#AI ethics`, `#China`
 
 ---
