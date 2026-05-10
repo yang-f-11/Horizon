@@ -5,154 +5,213 @@ date: 2026-05-10
 lang: zh
 ---
 
-> From 32 items, 7 important content pieces were selected
+> From 32 items, 9 important content pieces were selected
 
 ---
 
-1. [硬件认证成为欧盟数字钱包的垄断助推器](#item-1) ⭐️ 9.0/10
-2. [数学家测试 ChatGPT 5.5 Pro 解决温和问题](#item-2) ⭐️ 9.0/10
-3. [本地 AI 必须成为常态](#item-3) ⭐️ 8.0/10
-4. [虚构的 CVE-2024-YIKES 描述 Rust 供应链攻击](#item-4) ⭐️ 8.0/10
-5. [重返 AWS 引发锁定效应和成本的批评](#item-5) ⭐️ 8.0/10
-6. [罗斯曼愿为 OrcaSlicer 开发者支付法律费用](#item-6) ⭐️ 8.0/10
-7. [通过反编译将太空军校生弹球移植到 Linux](#item-7) ⭐️ 8.0/10
+1. [硬件认证成为垄断工具](#item-1) ⭐️ 9.0/10
+2. [本地 AI 应成为常态，类比开源运动](#item-2) ⭐️ 8.0/10
+3. [虚构的 Rust 供应链事件引发安全担忧](#item-3) ⭐️ 8.0/10
+4. [重回 AWS，我再次想起离开的理由](#item-4) ⭐️ 8.0/10
+5. [Louis Rossmann 为 OrcaSlicer 开发者提供法律支持](#item-5) ⭐️ 8.0/10
+6. [数学家测试 ChatGPT 5.5 Pro，发现推理能力提升](#item-6) ⭐️ 8.0/10
+7. [WebRTC 丢包策略损害 LLM 音频提示质量](#item-7) ⭐️ 8.0/10
+8. [中国灰产以 90%折扣销售 Claude API](#item-8) ⭐️ 8.0/10
+9. [xAI Grok Build 工具泄露，对标 Claude Code](#item-9) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [硬件认证成为欧盟数字钱包的垄断助推器](https://grapheneos.social/@GrapheneOS/116550899908879585) ⭐️ 9.0/10
+## [硬件认证成为垄断工具](https://grapheneos.social/@GrapheneOS/116550899908879585) ⭐️ 9.0/10
 
-GrapheneOS 社交媒体上的一篇文章指出，要求欧盟数字身份钱包使用苹果和谷歌的硬件认证，会巩固它们的垄断地位，并破坏数字主权和隐私。 这一批评揭示了出于善意制定的安全要求可能无意间加强苹果和谷歌的双头垄断，损害数字主权和隐私。同时，它还引发了对钱包设计缺乏零知识证明的担忧，这可能使得跟踪成为可能。 该文章特别指出，欧盟数字身份钱包要求由谷歌或苹果提供硬件认证，从而将数字身份与它们的平台捆绑。社区评论还提到，该系统未使用零知识证明或盲签名，可能使操作与设备关联成为可能。
+GrapheneOS 社交平台上的讨论指出，欧盟数字钱包（EUDI）要求由苹果或谷歌提供硬件认证，这实际上将欧盟数字身份绑定到美国双头垄断，损害了数字主权。 这之所以重要，是因为它利用安全技术强制实现供应商锁定，可能排除替代操作系统和设备，并将关键身份基础设施的控制权集中到两家美国公司手中。 评论者指出，认证过程未使用零知识证明或盲签名，这意味着每个认证包可用于将操作与特定设备关联，损害隐私。此外，现代 CPU/SoC 上的引导加载程序被锁定，设备所有者无法修改它们。
 
 hackernews · ChuckMcM · May 10, 17:54 · [社区讨论](https://news.ycombinator.com/item?id=48086190)
 
-**背景**: 硬件认证是一种安全机制，设备通过防篡改芯片（如 TPM 或硬件密钥库）证明其真实性。欧盟数字身份钱包是一项为欧盟公民提供标准化数字身份的计划。批评者认为，要求由占主导地位的移动操作系统提供商提供硬件认证，将控制权拱手让给它们，违背了数字主权的目标。
+**背景**: 硬件认证是一种过程，设备硬件（例如 TPM）通过加密方式验证其配置和完整性。远程认证是可信计算的关键特性，自诞生以来一直存在争议，理查德·斯托尔曼等批评者将其称为“背叛计算”，因为它可能用于 DRM 和供应商控制。欧盟数字钱包需要这种认证来证明设备可信。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/EU_Digital_Identity_Wallet">EU Digital Identity Wallet - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Remote_attestation">Remote attestation</a></li>
 <li><a href="https://developer.android.com/privacy-and-security/security-key-attestation">Verify hardware-backed key pairs with key attestation | Security | Android Developers</a></li>
 <li><a href="https://aembit.io/blog/attestation-based-identity-hardware-cloud-security/">Attestation-Based Identity: How It Works and Why It Matters</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论表达了强烈的反对，用户指出欧盟要求美国公司提供认证具有讽刺意味。一位评论者强调，缺少零知识证明是更严重的问题，因为它允许关联。另一位评论者追溯了反对硬件序列号和 TPM 的历史，认为安全宣传导致了围墙花园的出现。
+**社区讨论**: 评论者对数字主权和隐私表示强烈担忧，并类比了 1999 年英特尔放弃的 CPU 序列号事件。有人认为该技术实现了垄断控制，且迫切需要一种在制造后修改微电子设备的方法。另有评论批评缺乏零知识证明等隐私保护技术。
 
-**标签**: `#hardware attestation`, `#digital sovereignty`, `#privacy`, `#monopoly`, `#EU digital wallet`
+**标签**: `#hardware attestation`, `#monopoly`, `#digital sovereignty`, `#privacy`, `#EU digital identity`
 
 ---
 
 <a id="item-2"></a>
-## [数学家测试 ChatGPT 5.5 Pro 解决温和问题](https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/) ⭐️ 9.0/10
+## [本地 AI 应成为常态，类比开源运动](https://unix.foo/posts/local-ai-needs-to-be-norm/) ⭐️ 8.0/10
 
-一位著名数学家发表了使用 ChatGPT 5.5 Pro 的详细记录，指出它能够解决通常用于训练博士生新手的‘温和问题’。 这表明大语言模型可能很快就能处理通常用于培训新研究人员的问题，这可能会显著改变研究教育的格局以及数学工作的性质。 根据文章和评论，虽然 ChatGPT 5.5 Pro 能够解决简单问题并自我纠正，但仍需严格指导，且使用成本高昂。
+一篇文章主张本地 AI 部署应成为标准，将其与开源运动相类比，并批评了对 OpenAI 和 Anthropic 等远程 AI 服务的过度依赖。 这种转变可能使 AI 访问民主化、增强隐私并减少对集中式提供商的依赖，但仍面临硬件和软件挑战。这场争论反映了越来越多的社区认为本地 AI 对未来 AI 生态系统至关重要。 文章将当前远程 AI 的主导地位与早期 SaaS 锁定相类比，指出像在 MacBook Pro 或 Strix Halo 上运行的本地模型正变得可行。然而，硬件可用性和用户友好界面仍然是关键障碍。
 
-hackernews · _alternator_ · May 9, 02:41 · [社区讨论](https://news.ycombinator.com/item?id=48071262)
+hackernews · cylo · May 10, 17:19 · [社区讨论](https://news.ycombinator.com/item?id=48085821)
 
-**背景**: 在数学中，‘温和问题’是精心挑选的、略高于学生当前能力的问题，用于培养研究技能。LLM 解决这类问题的能力挑战了传统的新研究人员指导方法。
+**背景**: 本地 AI 指的是在用户自己设备上运行的 AI 模型，而非远程服务器。开源运动表明，去中心化、社区驱动的软件可以媲美专有解决方案。类似地，本地 AI 承诺隐私、离线使用和无 API 成本，但目前能力和易用性仍落后于云端 AI 服务。
 
-**社区讨论**: 评论者普遍同意作者的评估，指出 ChatGPT 5.5 Pro 是第一个他们能够驾驭来解决简单问题的模型，尽管成本高昂。一位物理学教授分享了与 Gemini 类似的经历，称赞其发现错误的能力，但也指出概念性错误。此外，还有关于当想法变得容易产生时其价值的哲学辩论。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://grokipedia.com/page/Local_AI_vs_cloud_AI">Local AI vs. cloud AI</a></li>
+<li><a href="https://www.microcenter.com/site/mc-news/article/where-local-ai-beats-the-cloud.aspx">Where Local AI Beats the Cloud (and Where it Doesn't)</a></li>
 
-**标签**: `#ChatGPT`, `#LLM`, `#AI`, `#mathematics`, `#research`
+</ul>
+</details>
+
+**社区讨论**: 评论者大多赞同文章，指出本地 AI 会像开源一样追赶上来，但一些人对硬件可用性表示担忧。当另一篇帖子批评 Chrome 的本地 LLM 占用磁盘空间时引发了一场辩论，凸显了公司在尝试本地 AI 时进退两难的困境。
+
+**标签**: `#local AI`, `#AI deployment`, `#open source`, `#privacy`, `#hardware`
 
 ---
 
 <a id="item-3"></a>
-## [本地 AI 必须成为常态](https://unix.foo/posts/local-ai-needs-to-be-norm/) ⭐️ 8.0/10
+## [虚构的 Rust 供应链事件引发安全担忧](https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html) ⭐️ 8.0/10
 
-一篇博客文章主张本地 AI 应成为常态，将其与历史上从专有软件向开源软件的转变相类比，并讨论了当前对 Anthropic 和 OpenAI 等公司远程 AI 服务的依赖。 这一点很重要，因为它挑战了当前集中式 AI 服务模式，并强调了供应商锁定、隐私问题和可访问性风险。讨论反映了社区对本地、用户控制的 AI 替代方案日益增长的渴望。 该文章指出，本地 AI 的采用正在从大型数据中心发展到小型集群，最终将发展到具有高显存的消费级硬件。它承认硬件可用性是一个潜在瓶颈，提及了对足够本地计算能力获取的担忧。
+一篇题为 CVE-2024-YIKES 的虚构事件报告被发布，展示了供应链攻击如何通过窃取看似无害的 crate 维护者的凭证来危害 Rust 生态系统。 这篇虚构文章引发了关于包生态系统中真实漏洞的重要讨论，强调了加强供应链安全措施和提高开发者意识的必要性。 报告描述了一个凭证被泄露的场景，导致恶意代码进入像 vulpine-lz4 这样的传递依赖项，而该库是 cargo 本身的依赖。它强调了即使低人气 crate 也可能带来关键风险。
 
-hackernews · cylo · May 10, 17:19 · [社区讨论](https://news.ycombinator.com/item?id=48085821)
+hackernews · miniBill · May 10, 17:43 · [社区讨论](https://news.ycombinator.com/item?id=48086082)
 
-**背景**: 本地 AI 指在自己的硬件上直接运行 AI 模型，而非依赖云端 API。这一运动与开源软件革命相似，专有解决方案最初更优越，但最终开源替代品获得了发展动力。
+**背景**: 供应链攻击通过危害依赖关系来攻击软件开发流程。Rust 生态系统与其他生态系统一样，依赖包管理器（cargo）和注册中心（crates.io）。这类虚构故事帮助开发者在不发生真实事件的情况下了解潜在攻击向量。
 
-**社区讨论**: 评论将本地 AI 与开源进行历史类比，指出今天的情绪与早期对开源的不屑相似。其他人则争论硬件限制，对获取足够硬件的合法担忧，并指出用户抱怨 Chrome 本地 AI 模型需要几 GB 空间的讽刺之处。
+**社区讨论**: 评论赞赏了其现实性的叙事，一些人指出它突出了可能用于危害 cargo 的特定 crate。用户也对诸如来自可疑域名的 YubiKey 和关于 fish shell 的澄清等细节感到幽默。
 
-**标签**: `#local AI`, `#open source`, `#hardware`, `#AI adoption`, `#community discussion`
+**标签**: `#supply-chain security`, `#Rust`, `#fiction`, `#cybersecurity`
 
 ---
 
 <a id="item-4"></a>
-## [虚构的 CVE-2024-YIKES 描述 Rust 供应链攻击](https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html) ⭐️ 8.0/10
+## [重回 AWS，我再次想起离开的理由](http://fourlightyears.blogspot.com/2026/05/i-returned-to-aws-and-was-reminded-hard.html) ⭐️ 8.0/10
 
-一份名为“CVE-2024-YIKES”的虚构但现实的 incident report 已发布，详细描述了针对 Rust 生态系统的供应链攻击，该攻击利用了 Cargo 的传递依赖。 这份报告是一个警示故事，强调在开源包管理中改进安全实践的迫切需要，特别是对于 Rust 的 Cargo 及类似生态系统。 该攻击涉及窃取一个低星库（'vulpine-lz4'）维护者的凭证，该库是 Cargo 的传递依赖，展示了一个看似不重要的 crate 如何成为关键攻击向量。
+一位博主在重返 AWS 后撰文批评其复杂性、高昂成本、数据出口费用以及对待开源项目的方式。 这篇个人批评引发了许多云用户的共鸣，他们面临供应商锁定和不可预测性问题，引发了关于使用大型云服务提供商利弊的讨论。 作者详细描述了申请数据传输（DTO）请求的困难，需要填写多页表格并说明原因，且延迟可能长达一个月，还提到了 AWS 对 Elasticsearch、Redis 等开源项目的争议性使用。
 
-hackernews · miniBill · May 10, 17:43 · [社区讨论](https://news.ycombinator.com/item?id=48086082)
+hackernews · andrewstuart · May 9, 08:37 · [社区讨论](https://news.ycombinator.com/item?id=48073201)
 
-**背景**: 供应链攻击针对软件项目中的依赖关系以危害下游用户。在 Rust 生态系统中，Cargo 管理来自 crates.io 的包，如果维护者被攻破，传递依赖可能引入漏洞。这个虚构场景旨在通过此类攻击提高安全意识。
+**背景**: 数据出口是指数据离开云提供商网络，AWS 对此收费，这常导致锁定效应。供应商锁定是指由于费用和专有服务使得切换供应商变得成本过高或困难。AWS 因克隆流行开源项目并商业化而受到批评，导致了一些项目改用 SSPL 等许可证。
 
-**社区讨论**: 评论者欣赏这种现实的虚构，有些人最初担心这是真实的。他们讨论了攻击向量的合理性，并注意到了幽默元素，同时也对来自代理开发的新兴威胁以及需要更好的安全资金表示担忧。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.aimably.com/cloud-financial-management-resources/data-egress">What Is Data Egress and Why Am I Charged for It?</a></li>
+<li><a href="https://www.cloudflare.com/learning/cloud/what-is-vendor-lock-in/">What is vendor lock-in? | Vendor lock-in and cloud computing | Cloudflare</a></li>
+<li><a href="https://www.geeksforgeeks.org/mobile-computing/vendor-lock-in-in-cloud-computing/">Vendor Lock-in in Cloud Computing - GeeksforGeeks</a></li>
 
-**标签**: `#supply chain security`, `#rust`, `#security`, `#incident response`, `#fiction`
+</ul>
+</details>
+
+**社区讨论**: 评论中，一位用户分享了在 AWS 数据传输请求过程中的痛苦经历，另一位批评 AWS 对开源项目的剥削，但也有人认为复杂性抱怨来自缺乏经验的用户，更平衡的观点指出 IAM 等企业级系统的复杂性是固有的。
+
+**标签**: `#AWS`, `#cloud computing`, `#open source`, `#vendor lock-in`
 
 ---
 
 <a id="item-5"></a>
-## [重返 AWS 引发锁定效应和成本的批评](http://fourlightyears.blogspot.com/2026/05/i-returned-to-aws-and-was-reminded-hard.html) ⭐️ 8.0/10
+## [Louis Rossmann 为 OrcaSlicer 开发者提供法律支持](https://www.tomshardware.com/3d-printing/louis-rossmann-tells-3d-printer-maker-bambu-lab-to-go-bleep-yourself-over-its-lawsuit-against-enthusiast-right-to-repair-advocate-offers-to-pay-the-legal-fees-for-a-threatened-orcaslicer-developer) ⭐️ 8.0/10
 
-一位博客作者描述了在离开后重返 AWS，再次遭遇供应商锁定、高昂的数据出口费用以及对待开源项目的不当做法。 这篇个人叙述引起许多开发者的共鸣，凸显了对云供应商依赖、隐性成本以及开源伦理的持续担忧，可能影响迁移决策和行业实践。 该文章具体批评了 AWS 缓慢且官僚的数据传出（DTO）流程、从 0.09 美元/GB 起步的阶梯式出口定价，以及 AWS 克隆 Elasticsearch（OpenSearch）、Redis（Valkey）和 MongoDB（DocumentDB）等开源项目，导致 SSPL 和 Elastic License 等防御性许可证的出现。
+著名维修权倡导者 Louis Rossmann 表示愿意为一名受到 Bambu Lab 诉讼威胁的 OrcaSlicer 开发者支付法律费用，该诉讼涉及第三方软件分支。 此案凸显了开源开发者与试图控制第三方软件的公司之间的紧张关系，对维修权运动和 3D 打印社区具有深远影响。 OrcaSlicer 是一款流行的开源 3D 打印切片软件，支持包括 Bambu Lab 机型在内的多种打印机。诉讼针对的是一个据称能对 Bambu 打印机进行未经授权修改的分支。
 
-hackernews · andrewstuart · May 9, 08:37 · [社区讨论](https://news.ycombinator.com/item?id=48073201)
+hackernews · iancmceachern · May 10, 14:47 · [社区讨论](https://news.ycombinator.com/item?id=48084432)
 
-**背景**: 供应商锁定是指客户过度依赖单一云服务商，导致迁移成本高昂且困难。AWS 对传出网络的数据收取出口费用，费用可能意外膨胀。AWS 还因分叉流行开源项目以提供托管服务而引发争议，导致这些项目修改许可证以阻止此类使用。
+**背景**: OrcaSlicer 是一款用于 3D 打印机的开源 G-code 生成器，因其高级功能被广泛使用。Bambu Lab 是一家中国消费科技公司，以 X1C 和 P1S 等桌面 3D 打印机闻名。该公司此前曾因试图限制离线访问而遭到批评，加剧了人们对维修权的担忧。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.digitalocean.com/resources/articles/aws-egress-costs">Understanding AWS's Egress Costs | DigitalOcean</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Vendor_lock-in">Vendor lock-in - Wikipedia</a></li>
-<li><a href="https://virtualizationreview.com/articles/2024/09/16/aws-open-source-brouhaha-about-elasticsearch-takes-another-turn.aspx">AWS Open-Source Brouhaha About... -- Virtualization Review</a></li>
+<li><a href="https://www.orcaslicer.com/">OrcaSlicer — Official Website & Downloads (Orca Slicer)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bambu_Lab">Bambu Lab</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论呈现两极分化：一些人强烈赞同关于出口费用和开源待遇的观点，而另一些人则认为 AWS 的复杂性适合企业使用。普遍观点是批评简化了 AWS 对大规模部署的价值，但对锁定的合理担忧仍然存在。
+**社区讨论**: 社区评论对 Bambu Lab 的行为表示愤怒，部分用户将打印机离线以示抗议。许多人赞扬 Louis Rossmann 愿意资助法律辩护，同时也有人讨论开源许可和企业越权的细微差别。
 
-**标签**: `#AWS`, `#vendor lock-in`, `#cloud computing`, `#open source`, `#data egress`
+**标签**: `#right-to-repair`, `#open source`, `#3D printing`, `#legal`, `#tech ethics`
 
 ---
 
 <a id="item-6"></a>
-## [罗斯曼愿为 OrcaSlicer 开发者支付法律费用](https://www.tomshardware.com/3d-printing/louis-rossmann-tells-3d-printer-maker-bambu-lab-to-go-bleep-yourself-over-its-lawsuit-against-enthusiast-right-to-repair-advocate-offers-to-pay-the-legal-fees-for-a-threatened-orcaslicer-developer) ⭐️ 8.0/10
+## [数学家测试 ChatGPT 5.5 Pro，发现推理能力提升](https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/) ⭐️ 8.0/10
 
-知名维修权倡导者路易斯·罗斯曼表示，愿意为一位受到 Bambu Lab（拓竹科技）法律威胁的 OrcaSlicer 开发者支付法律费用，此事涉及维修权争议。 此事凸显了闭源 3D 打印公司同开源社区在维修权问题上的日益紧张关系，也展示了有影响力的社区人物如何在开发者面临法律威胁时提供支持。 OrcaSlicer 是一款支持 Bambu Lab 打印机的开源 3D 打印切片软件；据称，威胁源自一个可能绕过了 Bambu 认证或专有协议的 OrcaSlicer 分支。
+著名数学家 Tim Gowers 发表了一篇详细报告，讲述了使用 ChatGPT 5.5 Pro 解决数学问题的经历，强调该模型能够进行 17 分钟的推理并自我纠正错误。 这次亲身体验提供了关于前沿 LLM 能力的罕见专家见解，引发了关于机器思考本质和数学研究未来的讨论。 Gowers 的问题需要一个构造来得到二次上界，模型经过 17 分钟的推理过程解决了该问题。尽管有所改进，该模型仍会犯错并需要严格的引导，且 Pro 版本因高 token 成本而受到关注。
 
-hackernews · iancmceachern · May 10, 14:47 · [社区讨论](https://news.ycombinator.com/item?id=48084432)
+hackernews · _alternator_ · May 9, 02:41 · [社区讨论](https://news.ycombinator.com/item?id=48071262)
 
-**背景**: OrcaSlicer 是一款免费开源切片软件，源自 Bambu Studio 和 SuperSlicer。Bambu Lab（拓竹科技）是一家中国公司，以 X1 Carbon 等热门桌面 3D 打印机闻名。维修权运动倡导用户有权维修和修改设备而不受制造商限制。路易斯·罗斯曼是知名 YouTuber 和维修权倡导者。
+**背景**: 生成式预训练变换器（GPT）是在海量文本数据上训练的大型语言模型（LLM），能够生成类似人类的文本。ChatGPT 是 OpenAI 的聊天界面。GPT-5.5 Pro 是高级付费模型，具有扩展推理能力，允许在回答前进行逐步思考，从而提高了复杂任务的准确性。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Bambu_Lab">Bambu Lab - Wikipedia</a></li>
-<li><a href="https://www.orcaslicer.com/download/">Download OrcaSlicer — Free 3D Printing Slicer Software</a></li>
+<li><a href="https://help.openai.com/en/articles/11909943-gpt-53-and-gpt-55-in-chatgpt">GPT-5.3 and GPT-5.5 in ChatGPT | OpenAI Help Center</a></li>
+<li><a href="https://www.androidauthority.com/openai-chatgpt-5-5-3660499/">OpenAI ChatGPT 5.5 boosts productivity and... - Android Authority</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论对罗斯曼表示强烈支持，用户批评 Bambu Lab 的反消费者行为，如试图取消离线访问。一些人对 Bambu 的专有生态系统表示不满，总体情绪对罗斯曼持正面态度，对 Bambu Lab 持负面态度。
+**社区讨论**: 评论指出，虽然 GPT-5.5 Pro 是第一个可以引导正确解决繁琐问题并自我纠正的 LLM，但它仍需严格指导且成本高昂。物理学家 John Baez 认为，随着想法生成自动化，思考的价值可能从稀缺性转向实用性。
 
-**标签**: `#3d-printing`, `#right-to-repair`, `#open-source`, `#legal`, `#community`
+**标签**: `#ChatGPT`, `#LLM`, `#AI reasoning`, `#machine learning`, `#philosophy`
 
 ---
 
 <a id="item-7"></a>
-## [通过反编译将太空军校生弹球移植到 Linux](https://brennan.io/2026/05/09/pinball-and-escrow/) ⭐️ 8.0/10
+## [WebRTC 丢包策略损害 LLM 音频提示质量](https://simonwillison.net/2026/May/9/luke-curley/#atom-everything) ⭐️ 8.0/10
 
-一个爱好者项目成功通过反编译将经典 Windows 游戏《太空军校生弹球》移植到 Linux 及其他平台，在未使用原始源代码的情况下高精度重现了游戏。 这一保存工作展示了反编译在让经典软件焕发新生方面的力量，并让原开发者倍感欣喜，凸显了社区驱动游戏保护的重要性。 该移植完全通过逆向工程原始可执行文件完成，没有使用源代码，并且还被移植到了众多游戏机平台，并可通过网页浏览器游玩。
+卢克·柯利指出，WebRTC 为了低延迟而激进地丢弃数据包，这会损害 LLM 音频提示的质量，因为 LLM 提示更注重准确性而非速度。 这揭示了 WebRTC（为实时对话优化）与 LLM 语音交互（优先考虑提示完整性）之间的根本设计不匹配，可能推动业界转向 MoQ（基于 QUIC 的媒体传输）等替代协议。 WebRTC 为保持低延迟而设计丢弃音频数据包，但在 LLM 提示中每个数据包对准确性都至关重要。卢克·柯利指出，在浏览器内甚至无法重传单个 WebRTC 音频数据包。
 
-hackernews · jandeboevrie · May 10, 11:22 · [社区讨论](https://news.ycombinator.com/item?id=48082968)
+rss · Simon Willison · May 9, 01:03
 
-**背景**: 反编译是将机器码翻译回高级语言的过程，通常会得到混淆的代码，需要大量手动清理工作。《太空军校生弹球》最初随 Windows 95/NT 4.0 捆绑发行，是 Maxis 开发的更大游戏《Full Tilt! Pinball》的一部分。
+**背景**: WebRTC 是浏览器中用于实时通信（RTC）的标准，用于视频/语音通话。它在网络状况不佳时通过丢弃数据包来优先保证低延迟。Media over QUIC（MoQ）是一种新兴协议，利用 QUIC 的可靠流实现重传，提供了潜在的替代方案。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Decompilation">Decompilation</a></li>
+<li><a href="https://explore.n1n.ai/blog/how-openai-scales-low-latency-realtime-voice-ai-2026-05-05">How OpenAI Scales Low Latency Realtime Voice AI</a></li>
+<li><a href="https://github.com/moq-dev/moq">GitHub - moq-dev/moq: Media over QUIC library in Rust+Typescript · GitHub</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 原开发者 davidst 表达了喜悦之情，并将帖子转发给了联合创始人。评论者指出该复刻版惊人地准确，并提到了其他移植版本，包括浏览器版本 (pinball.alula.me) 和 Archive.org 上的 Visual Pinball 版本。
+**标签**: `#WebRTC`, `#LLM`, `#audio`, `#latency`, `#real-time systems`
 
-**标签**: `#game preservation`, `#Linux`, `#decompilation`, `#retro gaming`, `#open source`
+---
+
+<a id="item-8"></a>
+## [中国灰产以 90%折扣销售 Claude API](https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-grey-market-sells-claude-api-access-at-90-percent-off-through-proxy-networks-that-harvest-user-data) ⭐️ 8.0/10
+
+一份报告揭示了中国灰产以低至官方价格一折的方式转售 Anthropic 的 Claude API 访问权限，其手段包括盗刷信用卡、批量注册账户和模型掉包。 这破坏了 AI API 的安全性和信任，使开发者面临数据窃取、模型欺诈和潜在的代码泄露风险，同时损害了合法 API 提供商的利益。 灰产运营商通常用廉价模型（包括国产模型）替换 Claude Opus，并收集用户的提示词和输出用于模型蒸馏，然后转售窃取的数据。
+
+telegram · zaihuapd · May 10, 01:48
+
+**背景**: 模型蒸馏是一种将知识从大型强大模型（教师）转移到更小更高效模型（学生）的技术，常用于降低成本。在此背景下，灰产运营商窃取 Claude 的输出来训练自己的廉价模型，带来知识产权和安全风险。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/1914629163857473685">模型蒸馏是什么？一文带你搞懂“模型蒸馏”看这篇就够了！ - 知乎</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI`, `#Claude`, `#security`, `#grey market`, `#API abuse`
+
+---
+
+<a id="item-9"></a>
+## [xAI Grok Build 工具泄露，对标 Claude Code](https://tech.ifeng.com/c/8t0yrbeeuwt) ⭐️ 8.0/10
+
+xAI 的跨平台 Agent 编程工具 Grok Build 遭到泄露，显示其支持 MCP、本地文件与 Git 权限，默认搭载 Grok 4.3。泄露还显示 xAI 正在训练高达 10 万亿参数的模型，旨在超越 Claude 的编程能力。 这使 xAI 成为 Anthropic 的 Claude Code 在 AI 编程助手市场的直接竞争对手，可能加速开发者工具领域的创新。计划中的模型规模高达 10 万亿参数，表明其在编程 AI 领域的重大投入。 Grok Build 是一款“氛围编程”Agent，可自主执行多步开发任务。xAI 声称至少需要 6 万亿参数（Opus 级别）才能对标 Claude Code，并正在训练 1 万亿、1.5 万亿、6 万亿和 10 万亿参数版本，以及图像视频模型 Imagine V2。
+
+telegram · zaihuapd · May 10, 13:34
+
+**背景**: Claude Code 是 Anthropic 的一款 Agent 编程工具，可读取代码库、编辑文件和运行命令。MCP（模型上下文协议）是一个开放标准，将 AI 应用连接到数据库和文件系统等外部工具，类似于 AI 的 USB-C 接口。Grok Build 利用 MCP 集成本地文件和 Git，实现自主开发工作流。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://x.ai/">xAI: Understand the Universe</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Model_Context_Protocol">Model Context Protocol - Wikipedia</a></li>
+<li><a href="https://supergrok.online/grok-build-vibe-coding-ai-agent/">Grok Build: xAI’s Vibe Coding AI Agent Explained</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI coding tools`, `#xAI`, `#Grok`, `#Claude Code`, `#large language models`
 
 ---
